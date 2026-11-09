@@ -2,3 +2,5 @@
 结合dsh上的新功能做一个做一个三层式的结构
 
 就是由传统的多worker+多subagent的形式，转化由主router也就是leader（人直接与leader对话）+副router+worker+subagent，由以前的静态常驻的worker转化为动态的worker，比如以前静态worker单独盯一个猎面图，现在由router自主决策该干什么再往下下发
+
+这种方案展现出对多模型大资产的极强适应性
