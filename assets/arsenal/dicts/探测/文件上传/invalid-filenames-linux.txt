@@ -1,0 +1,25 @@
+# Invalid filenames. Use these to trip upload checks and surface an absolute path in the error.
+.
+..
+...
+/
+//
+///
+\
+\\
+/dev/null
+/dev/zero
+/dev/random
+/dev/urandom
+/proc/self/cwd
+/proc/self/exe
+/etc/passwd
+*
+?
+<
+>
+|
+:
+"
+'
+`

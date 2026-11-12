@@ -1,0 +1,10 @@
+{
+  "version": 1,
+  "source": {
+    "name": "StrikeAgent_AtkBrain-Ultra",
+    "root": "",
+    "commit": "a57cdb7",
+    "license": "AGPL-3.0-only"
+  },
+  "tools": []
+}

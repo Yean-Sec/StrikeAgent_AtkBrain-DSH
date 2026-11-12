@@ -1,0 +1,3896 @@
+{
+  "version": 1,
+  "generatedAt": "2026-10-31T13:59:38.250Z",
+  "source": {
+    "name": "StrikeAgent_AtkBrain-Ultra",
+    "root": "",
+    "commit": "a57cdb7",
+    "license": "AGPL-3.0-only"
+  },
+  "counts": {
+    "skills": 0,
+    "resources": 0,
+    "dicts": 397,
+    "wordlists": 3,
+    "tools": 0,
+    "categories": {}
+  },
+  "skills": [],
+  "resources": [],
+  "dicts": [
+    {
+      "path": "dicts/catalog.json",
+      "source": "tools/dicts",
+      "note": "",
+      "tags": [],
+      "bytes": 16128,
+      "lines": 639,
+      "sha256": "ac4b829679fd1e1a1467c0c2fa3f756d6deac37322c96efa4043893b87d8dd55"
+    },
+    {
+      "path": "dicts/imported/index.json",
+      "source": "tools/dicts",
+      "note": "",
+      "tags": [],
+      "bytes": 18,
+      "lines": 4,
+      "sha256": "0343639fac1511a32a4c9a92c7655a6e9f9ad3a600fc6f30b5bdad6806160a97"
+    },
+    {
+      "path": "dicts/口令/db2-默认口令.txt",
+      "source": "tools/dicts",
+      "note": "DB2 默认账号口令对。",
+      "tags": [
+        "口令",
+        "db2"
+      ],
+      "bytes": 124,
+      "lines": 9,
+      "sha256": "4bde61c062fd477fe359157dec3dbb56f1fd3e1a002e83cf5efb1e265b4b4813"
+    },
+    {
+      "path": "dicts/口令/ftp-口令.txt",
+      "source": "tools/dicts",
+      "note": "FTP 常见口令约 250 条。",
+      "tags": [
+        "口令",
+        "ftp"
+      ],
+      "bytes": 1796,
+      "lines": 256,
+      "sha256": "68f2012c9f073d271e60e1e700d6842c1df33b9556ae1c1d57b1d6c34438f0b2"
+    },
+    {
+      "path": "dicts/口令/ftp-用户名.txt",
+      "source": "tools/dicts",
+      "note": "FTP 常见用户名，数量很少，用于匿名之外的认证面。",
+      "tags": [
+        "口令",
+        "ftp"
+      ],
+      "bytes": 76,
+      "lines": 12,
+      "sha256": "6a910268c06fab5e6d8ca54db27c2c7bdb019e19ba3f255eecc5aec7f664b2dd"
+    },
+    {
+      "path": "dicts/口令/http-默认口令.txt",
+      "source": "tools/dicts",
+      "note": "HTTP 基础认证常见默认账号口令对。",
+      "tags": [
+        "口令",
+        "http"
+      ],
+      "bytes": 98,
+      "lines": 8,
+      "sha256": "933cddcb0f41f6db937c8d79f3bf7ce85e94bd687dc45d2ac54e98f3f1f0f333"
+    },
+    {
+      "path": "dicts/口令/oracle-默认口令.txt",
+      "source": "tools/dicts",
+      "note": "Oracle 默认口令。只在确认是 Oracle 监听时使用。",
+      "tags": [
+        "口令",
+        "oracle"
+      ],
+      "bytes": 59322,
+      "lines": 600,
+      "sha256": "c5e1c530f8408f3fab8ac443e27c0da24abe410bb867e529ee4877e29db36db4"
+    },
+    {
+      "path": "dicts/口令/postgres-默认口令.txt",
+      "source": "tools/dicts",
+      "note": "PostgreSQL 默认账号口令对。",
+      "tags": [
+        "口令",
+        "postgres"
+      ],
+      "bytes": 78,
+      "lines": 6,
+      "sha256": "3879c76db60a0ed7c65584f78af1cda8a84cff16c9d98b06ad5fdcceb154022c"
+    },
+    {
+      "path": "dicts/口令/rdp-3389.txt",
+      "source": "tools/dicts",
+      "note": "3389 远程桌面口令小表。确认端口开放后再用。",
+      "tags": [
+        "口令",
+        "rdp"
+      ],
+      "bytes": 2344,
+      "lines": 257,
+      "sha256": "4302383ea21df084fa3b8441a219eef51c0d205723bd478ad052ba52fe9f41cd"
+    },
+    {
+      "path": "dicts/口令/rdp-口令.txt",
+      "source": "tools/dicts",
+      "note": "远程桌面短口令表。",
+      "tags": [
+        "口令",
+        "rdp"
+      ],
+      "bytes": 691,
+      "lines": 81,
+      "sha256": "e5ac40cc78e8ae75d601e67b116d8a483dc4d790d32b03144973133ed88c6441"
+    },
+    {
+      "path": "dicts/口令/rdp-用户名.txt",
+      "source": "tools/dicts",
+      "note": "远程桌面常见用户名。",
+      "tags": [
+        "口令",
+        "rdp"
+      ],
+      "bytes": 48,
+      "lines": 5,
+      "sha256": "5678dd290d9a2a4396033a0152bc10483c072e7625c9fbba093dc62cff41b0b1"
+    },
+    {
+      "path": "dicts/口令/ssh-口令.txt",
+      "source": "tools/dicts",
+      "note": "SSH 短口令表。banner 通了再试一轮。",
+      "tags": [
+        "口令",
+        "ssh"
+      ],
+      "bytes": 680,
+      "lines": 79,
+      "sha256": "d2d9278eeaeebcf2fc276fc303e700957a6df07ce7b0550e2f5b3b0de1ee4e12"
+    },
+    {
+      "path": "dicts/口令/ssh-用户名.txt",
+      "source": "tools/dicts",
+      "note": "SSH 常见用户名。先配小口令表，不要和超大弱口令表组合。",
+      "tags": [
+        "口令",
+        "ssh"
+      ],
+      "bytes": 38,
+      "lines": 6,
+      "sha256": "c37c80b334652e8dfd246b508ccd43664f963e4cc7e4a2c99085e3c4664f48f2"
+    },
+    {
+      "path": "dicts/口令/tomcat-管理默认口令.txt",
+      "source": "tools/dicts",
+      "note": "Tomcat Manager 默认账号口令对。",
+      "tags": [
+        "口令",
+        "tomcat"
+      ],
+      "bytes": 67,
+      "lines": 5,
+      "sha256": "abdf33d4db1e321b33eb6181183e3b9271a89a2823eaf0fc67f36414c9bdd0e3"
+    },
+    {
+      "path": "dicts/口令/华为产品弱口令.xlsx",
+      "source": "tools/dicts",
+      "note": "华为产品常见弱口令，只在指纹是华为时使用。",
+      "tags": [
+        "口令",
+        "华为"
+      ],
+      "bytes": 13728,
+      "lines": 65,
+      "sha256": "11b55e9073461615e364f436efc5a0da68cb18669d1e81a76289910836e996d6"
+    },
+    {
+      "path": "dicts/口令/华为安全产品默认口令.xlsx",
+      "source": "tools/dicts",
+      "note": "华为安全产品默认用户名口令速查，只在指纹是华为安全设备时使用。",
+      "tags": [
+        "口令",
+        "华为"
+      ],
+      "bytes": 245560,
+      "lines": 923,
+      "sha256": "36dce35e7f006951cf3ecc526a731e0f1fd758590cf4dbfbcae78dc42a60dbee"
+    },
+    {
+      "path": "dicts/口令/厂商默认账号密码-四千.xlsx",
+      "source": "tools/dicts",
+      "note": "约四千条厂商默认账号口令。设备默认密码表没有命中时再查。",
+      "tags": [
+        "口令",
+        "默认口令"
+      ],
+      "bytes": 96046,
+      "lines": 425,
+      "sha256": "63c5dc24b65a226eded0c6c53bd3ac1d03f2b49b43ca3491f7c4b0cae933a52b"
+    },
+    {
+      "path": "dicts/口令/厂商默认账号密码.csv",
+      "source": "tools/dicts",
+      "note": "多厂商默认账号口令速查表，按产品名对上再试。",
+      "tags": [
+        "口令",
+        "默认口令"
+      ],
+      "bytes": 87886,
+      "lines": 3525,
+      "sha256": "27b991cf8444e7ee5de7bc43c3e338f8451e8e7d8c119a08db673e0023c9fc99"
+    },
+    {
+      "path": "dicts/口令/口令-top100-国内.txt",
+      "source": "tools/dicts",
+      "note": "国内常见短口令约 100 条，用在中文站点登录面。",
+      "tags": [
+        "口令"
+      ],
+      "bytes": 1015,
+      "lines": 100,
+      "sha256": "a3a63f8055abd9351e276882dae3dca21fddf324ff8552bc15892f21c1e468e0"
+    },
+    {
+      "path": "dicts/口令/口令-top100.txt",
+      "source": "tools/dicts",
+      "note": "最常见的 100 个口令。服务认证先用这本，不要一上来用大表。",
+      "tags": [
+        "口令"
+      ],
+      "bytes": 809,
+      "lines": 100,
+      "sha256": "fa36c963daa509f0c5698be15faa0fdcdf3d20056793e646ec79fc30aa413472"
+    },
+    {
+      "path": "dicts/口令/口令-top1000.txt",
+      "source": "tools/dicts",
+      "note": "常见口令 1000 条。只在登录面确认存在、且小表没有命中时使用。",
+      "tags": [
+        "口令"
+      ],
+      "bytes": 8791,
+      "lines": 1003,
+      "sha256": "fbbb4942085c39367674d4f2ffac4838cb94340b5a7c26093cc958a4c523cc84"
+    },
+    {
+      "path": "dicts/口令/口令-top500.txt",
+      "source": "tools/dicts",
+      "note": "常见口令 500 条。top100 没中再升这一档。",
+      "tags": [
+        "口令"
+      ],
+      "bytes": 3493,
+      "lines": 501,
+      "sha256": "63c8449e5d43d7ae7e6eaaec19b3bcff86ff150189e22d9f849e9ba5000205bb"
+    },
+    {
+      "path": "dicts/口令/国内外设备默认口令.txt",
+      "source": "tools/dicts",
+      "note": "国内外网络与安全设备默认口令整理，设备指纹对上后再用。",
+      "tags": [
+        "口令",
+        "设备"
+      ],
+      "bytes": 12031,
+      "lines": 294,
+      "sha256": "2911a45840ffdfa05ccc42b53bc19175037abc75ee86df67dffd12d10ba0ef16"
+    },
+    {
+      "path": "dicts/口令/国内防火墙默认密码.txt",
+      "source": "tools/dicts",
+      "note": "国内防火墙出厂默认口令，用于已识别防火墙管理面的默认口令核验。",
+      "tags": [
+        "口令",
+        "防火墙"
+      ],
+      "bytes": 1875,
+      "lines": 108,
+      "sha256": "fddc11ead8247a56dc1e8126ab5fdab9215ec46760a2e394d1caf1cc256dedd9"
+    },
+    {
+      "path": "dicts/口令/安全设备账号密码.txt",
+      "source": "tools/dicts",
+      "note": "安全设备常见账号口令对，适合防火墙、审计、VPN 管理口。",
+      "tags": [
+        "口令",
+        "安全设备"
+      ],
+      "bytes": 16946,
+      "lines": 389,
+      "sha256": "0ac6a8826fada6d5952dfcb0e1fdaab66af14a764a4bf2210bf8335515d3ec54"
+    },
+    {
+      "path": "dicts/口令/常用密码.txt",
+      "source": "tools/dicts",
+      "note": "常见口令。服务和后台登录的第一档，比 top1000 更贴近这套环境已经在用的表。",
+      "tags": [
+        "口令"
+      ],
+      "bytes": 62027,
+      "lines": 7501,
+      "sha256": "a2df48fc79261d1eb5c2d2cf1588fa9b3347ed6ba04e827a39d52e71727d80fd"
+    },
+    {
+      "path": "dicts/口令/常用用户名.txt",
+      "source": "tools/dicts",
+      "note": "常见用户名。和口令表配对，先小后大。",
+      "tags": [
+        "口令",
+        "用户名"
+      ],
+      "bytes": 71357,
+      "lines": 8886,
+      "sha256": "9aa7c7c38d3170d75dc341b72b827dbea03e9a0e316e76db0269db7072dbd216"
+    },
+    {
+      "path": "dicts/口令/常见安全产品默认口令.xlsx",
+      "source": "tools/dicts",
+      "note": "安全产品系统默认口令清单，用于已识别的安全设备登录面。",
+      "tags": [
+        "口令",
+        "安全设备"
+      ],
+      "bytes": 15012,
+      "lines": 57,
+      "sha256": "c625b5c8ddf62475d9715f2c67f4031b0bc5631e9f14bf12c4681c942de07af5"
+    },
+    {
+      "path": "dicts/口令/常见安全设备默认口令.xlsx",
+      "source": "tools/dicts",
+      "note": "安全设备默认口令清单，和安全产品表互补。",
+      "tags": [
+        "口令",
+        "安全设备"
+      ],
+      "bytes": 15012,
+      "lines": 57,
+      "sha256": "c625b5c8ddf62475d9715f2c67f4031b0bc5631e9f14bf12c4681c942de07af5"
+    },
+    {
+      "path": "dicts/口令/设备默认密码.xlsx",
+      "source": "tools/dicts",
+      "note": "设备出厂默认账号口令表。认证面先查这本，再考虑服务弱口令，不要上超大弱口令表。",
+      "tags": [
+        "口令",
+        "默认口令",
+        "设备"
+      ],
+      "bytes": 345504,
+      "lines": 1257,
+      "sha256": "5e23e0e35d42796201c0690a7c3c1f06324063256d2f0b8ef15981d155d9e7f6"
+    },
+    {
+      "path": "dicts/口令/路由器默认初始密码.txt",
+      "source": "tools/dicts",
+      "note": "路由器初始口令补充表，上一本没有命中再试。",
+      "tags": [
+        "口令",
+        "路由器"
+      ],
+      "bytes": 2688,
+      "lines": 60,
+      "sha256": "d72fa87287b58b5d96f13c45c1eb4959e1500cb79e1e3dabae7bbec4b4910bd3"
+    },
+    {
+      "path": "dicts/口令/路由器默认密码.txt",
+      "source": "tools/dicts",
+      "note": "常见路由器默认口令，用于网络设备管理面。",
+      "tags": [
+        "口令",
+        "路由器"
+      ],
+      "bytes": 2747,
+      "lines": 60,
+      "sha256": "9be00f4c5e6fea8eb6fbe22e07a03f7c2a474c25e683538facb593c7f8e07068"
+    },
+    {
+      "path": "dicts/子域名/subdomains-100.txt",
+      "source": "tools/dicts",
+      "note": "子域名 100 条。先用这本看有没有明显业务子域。",
+      "tags": [
+        "子域名"
+      ],
+      "bytes": 557,
+      "lines": 101,
+      "sha256": "00227f5fdb67971ba0dd667431225103ac74bf97923d0a687926f48e72df0720"
+    },
+    {
+      "path": "dicts/子域名/subdomains-1000.txt",
+      "source": "tools/dicts",
+      "note": "子域名 1000 条。",
+      "tags": [
+        "子域名"
+      ],
+      "bytes": 5794,
+      "lines": 1000,
+      "sha256": "b3516d5ad0394ff4efd30589db0b98f9d0b95e926001939442401ee25cd0227c"
+    },
+    {
+      "path": "dicts/子域名/subdomains-10000.txt",
+      "source": "tools/dicts",
+      "note": "子域名 1 万条。小表没有，且允许爆破时再用。",
+      "tags": [
+        "子域名"
+      ],
+      "bytes": 74988,
+      "lines": 11779,
+      "sha256": "67915c7cd3d824b31d9df85fedaa4403b5dec5e842348753c61518ddba207f5d"
+    },
+    {
+      "path": "dicts/子域名/subdomains-500.txt",
+      "source": "tools/dicts",
+      "note": "子域名 500 条。100 条没有再升。",
+      "tags": [
+        "子域名"
+      ],
+      "bytes": 2883,
+      "lines": 501,
+      "sha256": "2637ac0d178f7d61d344abf19630d83de309575b1562d613c5cce95bd338fd7f"
+    },
+    {
+      "path": "dicts/子域名/子域名爆破参数-top16万.txt",
+      "source": "tools/dicts",
+      "note": "子域名大表，约 16 万条。只在小表没有、且项目允许子域名爆破时使用。",
+      "tags": [
+        "子域名"
+      ],
+      "bytes": 2337849,
+      "lines": 203995,
+      "sha256": "c4196621daf6bde239edadc46061bd3c6d7a4a01d420c4af2afde9039efb3a58"
+    },
+    {
+      "path": "dicts/探测/lfi-linux.txt",
+      "source": "tools/dicts",
+      "note": "Linux 文件包含和路径穿越。",
+      "tags": [
+        "探测",
+        "lfi"
+      ],
+      "bytes": 48883,
+      "lines": 1558,
+      "sha256": "a2602824be23221279590a25aa440825b08bae9c7660d34456a1d3c2d0367868"
+    },
+    {
+      "path": "dicts/探测/lfi-windows.txt",
+      "source": "tools/dicts",
+      "note": "Windows 文件包含和路径穿越。",
+      "tags": [
+        "探测",
+        "lfi"
+      ],
+      "bytes": 12736,
+      "lines": 377,
+      "sha256": "a7c2030460870189dcb5084582728e44aae666fd243242274e01867939c9b720"
+    },
+    {
+      "path": "dicts/探测/sql-mssql.txt",
+      "source": "tools/dicts",
+      "note": "MSSQL 注入探测语句。",
+      "tags": [
+        "探测",
+        "sql"
+      ],
+      "bytes": 3805,
+      "lines": 99,
+      "sha256": "d5d7fa89be0833d04ded95320902c0b2dcc470412e888e38e4793e73a1b1e315"
+    },
+    {
+      "path": "dicts/探测/sql-mysql.txt",
+      "source": "tools/dicts",
+      "note": "MySQL 注入探测语句。确认参数进了查询再用。",
+      "tags": [
+        "探测",
+        "sql"
+      ],
+      "bytes": 4624,
+      "lines": 109,
+      "sha256": "0ec943733e9ba0f335ca07d0e752c6233d8766c4fadf28871e8ccadf62bfe64d"
+    },
+    {
+      "path": "dicts/探测/sql-oracle.txt",
+      "source": "tools/dicts",
+      "note": "Oracle 注入探测语句。",
+      "tags": [
+        "探测",
+        "sql"
+      ],
+      "bytes": 1580,
+      "lines": 30,
+      "sha256": "1f89a6c70767db0f30312aad0350edecda3493e1cccfdc9284fc006ecbed82dd"
+    },
+    {
+      "path": "dicts/探测/sql-登录绕过.txt",
+      "source": "tools/dicts",
+      "note": "登录框的 SQL 万能密码，只打认证参数。",
+      "tags": [
+        "探测",
+        "sql"
+      ],
+      "bytes": 1722,
+      "lines": 118,
+      "sha256": "56676f8656350e0a5a5de220af35d1dd471052c7296a3c97a2243b4b97db9c50"
+    },
+    {
+      "path": "dicts/探测/sql-通用.txt",
+      "source": "tools/dicts",
+      "note": "通用 SQL 注入探测语句。",
+      "tags": [
+        "探测",
+        "sql"
+      ],
+      "bytes": 6041,
+      "lines": 329,
+      "sha256": "de07188829d2ba0a4eba24c1fdc721030f9d8156efefc7c4515c7855275c3846"
+    },
+    {
+      "path": "dicts/探测/xss-payload.txt",
+      "source": "tools/dicts",
+      "note": "XSS 探测语句。只打会回显到页面的参数。",
+      "tags": [
+        "探测",
+        "xss"
+      ],
+      "bytes": 114131,
+      "lines": 1850,
+      "sha256": "5284a3c3b554fbb8c44286d64b58d324f06fa508fe924ba4adfad551aebc7e25"
+    },
+    {
+      "path": "dicts/探测/参数关键字.txt",
+      "source": "tools/dicts",
+      "note": "参数名关键字，比 2 万参数名更短，先用这本。",
+      "tags": [
+        "探测",
+        "参数"
+      ],
+      "bytes": 7277,
+      "lines": 793,
+      "sha256": "15c6efffbc78f33ffb61042afbc48ca551ae6ec64ffd567023f5a3915002f2da"
+    },
+    {
+      "path": "dicts/探测/命令执行-php.txt",
+      "source": "tools/dicts",
+      "note": "PHP 代码执行探测语句。",
+      "tags": [
+        "探测",
+        "命令执行"
+      ],
+      "bytes": 398,
+      "lines": 19,
+      "sha256": "3e5fb90762cad9fc481ee3ad6ecf009beac2ab8c731c6b9be6a58778bc2779c8"
+    },
+    {
+      "path": "dicts/探测/命令执行-unix.txt",
+      "source": "tools/dicts",
+      "note": "Unix 命令注入探测语句。",
+      "tags": [
+        "探测",
+        "命令执行"
+      ],
+      "bytes": 3904,
+      "lines": 571,
+      "sha256": "223ae808ae3f6570ee97deaf9a094b2a6b6f62e65628dc0c08bf7ad17dd8301e"
+    },
+    {
+      "path": "dicts/探测/命令执行-windows.txt",
+      "source": "tools/dicts",
+      "note": "Windows 命令注入探测语句。",
+      "tags": [
+        "探测",
+        "命令执行"
+      ],
+      "bytes": 1076,
+      "lines": 158,
+      "sha256": "f14ad83e7e3edeed9e2b39b12dd4f801228c38f29b4adc4f4e509281f28e0a7e"
+    },
+    {
+      "path": "dicts/探测/文件上传/alt-extensions-asp.txt",
+      "source": "tools/dicts",
+      "note": "ASP 的替代后缀。",
+      "tags": [
+        "探测",
+        "文件上传"
+      ],
+      "bytes": 364,
+      "lines": 31,
+      "sha256": "4c04625c5aaa59424d29d7db1486a34c3483d4370f6eccdac4afbaeb5783ed85"
+    },
+    {
+      "path": "dicts/探测/文件上传/alt-extensions-coldfusion.txt",
+      "source": "tools/dicts",
+      "note": "ColdFusion 替代后缀。",
+      "tags": [
+        "探测",
+        "文件上传"
+      ],
+      "bytes": 483,
+      "lines": 41,
+      "sha256": "e7f7795a29d542d80270bde1386e7105cb7cb89e83bc15abbc256885bcf1f444"
+    },
+    {
+      "path": "dicts/探测/文件上传/alt-extensions-jsp.txt",
+      "source": "tools/dicts",
+      "note": "JSP 替代后缀。",
+      "tags": [
+        "探测",
+        "文件上传"
+      ],
+      "bytes": 620,
+      "lines": 51,
+      "sha256": "81868cb23385d1cabfe03c8855068b26cdba60ffc9c9e22d908d22feed805a04"
+    },
+    {
+      "path": "dicts/探测/文件上传/alt-extensions-perl.txt",
+      "source": "tools/dicts",
+      "note": "Perl 脚本的替代后缀。",
+      "tags": [
+        "探测",
+        "文件上传"
+      ],
+      "bytes": 320,
+      "lines": 34,
+      "sha256": "66fa420c6d386e0909d315121891a2cc540585f63f7d66d50292319bda7fa8b9"
+    },
+    {
+      "path": "dicts/探测/文件上传/alt-extensions-php.txt",
+      "source": "tools/dicts",
+      "note": "PHP 替代后缀，用来试后缀黑名单。",
+      "tags": [
+        "探测",
+        "文件上传"
+      ],
+      "bytes": 760,
+      "lines": 61,
+      "sha256": "b947e2e6ba84dee6e0546cb24d865b49207d63d7a65aad3bb5a728e7183c1a3d"
+    },
+    {
+      "path": "dicts/探测/文件上传/file-ul-filter-bypass-commonly-writable-directories.txt",
+      "source": "tools/dicts",
+      "note": "上传后常可写的目录名。",
+      "tags": [
+        "探测",
+        "文件上传"
+      ],
+      "bytes": 79,
+      "lines": 10,
+      "sha256": "7f50ada2632b9b3bdcbc62688409a8489aa0b697c3f0b338bbe1ece8b8f31965"
+    },
+    {
+      "path": "dicts/探测/文件上传/file-ul-filter-bypass-microsoft-asp-filetype-bf.txt",
+      "source": "tools/dicts",
+      "note": "ASP 上传类型绕过。",
+      "tags": [
+        "探测",
+        "文件上传"
+      ],
+      "bytes": 396,
+      "lines": 10,
+      "sha256": "7c365ba7ec089433bf06d292bea83ea97abf0d6c87e41288235ef33f073bf2db"
+    },
+    {
+      "path": "dicts/探测/文件上传/file-ul-filter-bypass-microsoft-asp.txt",
+      "source": "tools/dicts",
+      "note": "ASP 上传过滤绕过。",
+      "tags": [
+        "探测",
+        "文件上传"
+      ],
+      "bytes": 810,
+      "lines": 57,
+      "sha256": "d7d1c0183e3f78b58ffaac59434b6860d605885b5ab8341c1ecdf2ca0b854d5a"
+    },
+    {
+      "path": "dicts/探测/文件上传/file-ul-filter-bypass-ms-php.txt",
+      "source": "tools/dicts",
+      "note": "Windows 上的 PHP 上传绕过文件名。",
+      "tags": [
+        "探测",
+        "文件上传"
+      ],
+      "bytes": 311,
+      "lines": 12,
+      "sha256": "769ad059e1a7bfce13fcc525309321723063ff8032404056bb7a70a80df00438"
+    },
+    {
+      "path": "dicts/探测/文件上传/file-ul-filter-bypass-x-platform-generic.txt",
+      "source": "tools/dicts",
+      "note": "文件上传过滤绕过，跨平台通用文件名。",
+      "tags": [
+        "探测",
+        "文件上传"
+      ],
+      "bytes": 32,
+      "lines": 4,
+      "sha256": "9ae23310b5909872ceba09844c7202f6723549925d6663fb0dcfed3c21917bdc"
+    },
+    {
+      "path": "dicts/探测/文件上传/file-ul-filter-bypass-x-platform-php.txt",
+      "source": "tools/dicts",
+      "note": "PHP 上传过滤绕过文件名。",
+      "tags": [
+        "探测",
+        "文件上传"
+      ],
+      "bytes": 291,
+      "lines": 10,
+      "sha256": "3791b3745176ea0636cecbf3464b1da544ad28622c27a01650dd835415a20c3b"
+    },
+    {
+      "path": "dicts/探测/文件上传/invalid-filenames-linux.txt",
+      "source": "tools/dicts",
+      "note": "Linux 上用来试上传校验的非法文件名。",
+      "tags": [
+        "探测",
+        "文件上传"
+      ],
+      "bytes": 224,
+      "lines": 26,
+      "sha256": "dff382079745c8a8f9209f4064982e86d0931b1613a20e4f12924394f16afb0f"
+    },
+    {
+      "path": "dicts/探测/文件上传/invalid-filenames-microsoft.txt",
+      "source": "tools/dicts",
+      "note": "Windows 非法文件名。",
+      "tags": [
+        "探测",
+        "文件上传"
+      ],
+      "bytes": 503,
+      "lines": 34,
+      "sha256": "2b1e64e97368a8755e35757b82327dd16a3cf672d66c4321f5d7de1bed7bcdcb"
+    },
+    {
+      "path": "dicts/探测/文件上传/invalid-filesystem-chars-microsoft.txt",
+      "source": "tools/dicts",
+      "note": "Windows 非法文件名字符。",
+      "tags": [
+        "探测",
+        "文件上传"
+      ],
+      "bytes": 326,
+      "lines": 15,
+      "sha256": "786eccf936e0e3f8580a782b06acb1aaa87cbc2dceac6c5a4d35599d90f27e9e"
+    },
+    {
+      "path": "dicts/探测/文件上传/invalid-filesystem-chars-osx.txt",
+      "source": "tools/dicts",
+      "note": "macOS 非法文件名字符，用来试上传校验。",
+      "tags": [
+        "探测",
+        "文件上传"
+      ],
+      "bytes": 279,
+      "lines": 4,
+      "sha256": "20ff6918eb2e4b81163dc2ee892c612d1d11bf31b8a20f1beada1fc72be929d2"
+    },
+    {
+      "path": "dicts/探测/查询参数.txt",
+      "source": "tools/dicts",
+      "note": "常见查询参数名。",
+      "tags": [
+        "探测",
+        "参数"
+      ],
+      "bytes": 1757,
+      "lines": 178,
+      "sha256": "2f29bf36a935a044a2f84581300da29b25ade97ffa053a39cf5bffd25e43997c"
+    },
+    {
+      "path": "dicts/探测/注册找回密码参数.txt",
+      "source": "tools/dicts",
+      "note": "注册、登录、找回密码接口的参数名。",
+      "tags": [
+        "探测",
+        "认证"
+      ],
+      "bytes": 575,
+      "lines": 61,
+      "sha256": "b24ea5022894b638f31a4a40ca1e02e93dc767c4c2d48e59ec909358c2c8badd"
+    },
+    {
+      "path": "dicts/目录/adminer.txt",
+      "source": "tools/dicts",
+      "note": "Adminer 路径。",
+      "tags": [
+        "目录",
+        "数据库"
+      ],
+      "bytes": 4585,
+      "lines": 195,
+      "sha256": "4f7422b6e0d421f505cd2c8252a9a5138de7d1e3cf42cbe665bdfcdca97fd88c"
+    },
+    {
+      "path": "dicts/目录/apache-路径.txt",
+      "source": "tools/dicts",
+      "note": "Apache 常见状态页和配置路径。",
+      "tags": [
+        "目录",
+        "apache"
+      ],
+      "bytes": 260,
+      "lines": 31,
+      "sha256": "4ba2307003cb281087297fcd65ff5f3293b9174bc91c3f93d3d95732362ac357"
+    },
+    {
+      "path": "dicts/目录/api-路径-补充.txt",
+      "source": "tools/dicts",
+      "note": "API 路径补充。",
+      "tags": [
+        "目录",
+        "api"
+      ],
+      "bytes": 5634,
+      "lines": 212,
+      "sha256": "beaa6c938e631bd2e03148ffff06005b8e9f1b63ce9c49d6a2c3d32d7fd5cb93"
+    },
+    {
+      "path": "dicts/目录/api-路径.txt",
+      "source": "tools/dicts",
+      "note": "API 路径。接口站和前后端分离站用这本。",
+      "tags": [
+        "目录",
+        "api"
+      ],
+      "bytes": 13919,
+      "lines": 589,
+      "sha256": "706c2d4b4054e15c9bf4e9bb46796b326d5b56dc65a47714146c6a5a5b7071b1"
+    },
+    {
+      "path": "dicts/目录/git-泄露.txt",
+      "source": "tools/dicts",
+      "note": "Git 仓库泄露路径。",
+      "tags": [
+        "目录",
+        "git"
+      ],
+      "bytes": 979,
+      "lines": 50,
+      "sha256": "21e601f706651450c0c5c5cee4bbbd4a3d60e681475b51313c1c37b144f2d4b7"
+    },
+    {
+      "path": "dicts/目录/k8s-路径.txt",
+      "source": "tools/dicts",
+      "note": "Kubernetes 仪表盘和常见路径。",
+      "tags": [
+        "目录",
+        "k8s"
+      ],
+      "bytes": 974,
+      "lines": 57,
+      "sha256": "b6991aef5e6e96311229492068caaf9a8bf21194ca8c9be57bc16ff0ef980227"
+    },
+    {
+      "path": "dicts/目录/linux-信息文件.txt",
+      "source": "tools/dicts",
+      "note": "Linux 上会暴露在 Web 根的信息文件名。",
+      "tags": [
+        "目录",
+        "linux"
+      ],
+      "bytes": 5524,
+      "lines": 259,
+      "sha256": "657024f1c2c122435cf6d9c6377bc32814f2ffae3c31b39654f4451f5669df6e"
+    },
+    {
+      "path": "dicts/目录/php-目录-小.txt",
+      "source": "tools/dicts",
+      "note": "PHP 站点短目录表，开局用。",
+      "tags": [
+        "目录",
+        "php"
+      ],
+      "bytes": 21362,
+      "lines": 1067,
+      "sha256": "2e362bfbc1d2778ec4b2097501b10b19ec6c1c22b88be6caa52999ec49c61a12"
+    },
+    {
+      "path": "dicts/目录/php-目录.txt",
+      "source": "tools/dicts",
+      "note": "PHP 常见目录，小表没有再升。",
+      "tags": [
+        "目录",
+        "php"
+      ],
+      "bytes": 6556,
+      "lines": 423,
+      "sha256": "2da5de3e23dfadba53492c5e192c8fc55ea967db9b7ed06f077d781284b56834"
+    },
+    {
+      "path": "dicts/目录/phpmyadmin.txt",
+      "source": "tools/dicts",
+      "note": "phpMyAdmin 路径。",
+      "tags": [
+        "目录",
+        "数据库"
+      ],
+      "bytes": 3936,
+      "lines": 200,
+      "sha256": "016bc383ee0f0f4e7ee135e4630dc29cf2a1e68b52c7a0b1e1a7aa9a276ec77b"
+    },
+    {
+      "path": "dicts/目录/spring-actuator-路径.txt",
+      "source": "tools/dicts",
+      "note": "Actuator 路径补充，和上一本对不齐时再试。",
+      "tags": [
+        "目录",
+        "spring"
+      ],
+      "bytes": 1051,
+      "lines": 116,
+      "sha256": "c31d8b5c32f93fa2fb7ef40bc8efb8e67d54415f15c0349e6a8e8da4447fc9fc"
+    },
+    {
+      "path": "dicts/目录/spring-actuator.txt",
+      "source": "tools/dicts",
+      "note": "Spring Boot Actuator 端点。",
+      "tags": [
+        "目录",
+        "spring"
+      ],
+      "bytes": 517,
+      "lines": 35,
+      "sha256": "4dab9ecb431793fae5682dfadac2d68be475f410481b610ae67cf4539aa005dc"
+    },
+    {
+      "path": "dicts/目录/spring-目录.txt",
+      "source": "tools/dicts",
+      "note": "Spring 常见目录和接口。",
+      "tags": [
+        "目录",
+        "spring"
+      ],
+      "bytes": 1762,
+      "lines": 87,
+      "sha256": "011156569f8c76728e5eb1b5f4d34a8a9919334d6289826ee180ae62cdbaa216"
+    },
+    {
+      "path": "dicts/目录/springboot-swagger.txt",
+      "source": "tools/dicts",
+      "note": "Spring Boot 与 Swagger 常见接口和文档路径。",
+      "tags": [
+        "目录",
+        "spring"
+      ],
+      "bytes": 964,
+      "lines": 51,
+      "sha256": "e658a612f796b45e2d3afaeae98e46be1edead8aff4b45b30de189de3e089ff7"
+    },
+    {
+      "path": "dicts/目录/tomcat-路径.txt",
+      "source": "tools/dicts",
+      "note": "Tomcat 管理端和示例路径。",
+      "tags": [
+        "目录",
+        "tomcat"
+      ],
+      "bytes": 1770,
+      "lines": 37,
+      "sha256": "82ef7361c99ffca2e73e73960822246391481c5b5732c54570fe0344859b3cda"
+    },
+    {
+      "path": "dicts/目录/web-config.txt",
+      "source": "tools/dicts",
+      "note": "IIS 和 .NET 的 web.config 一类路径。",
+      "tags": [
+        "目录",
+        "配置"
+      ],
+      "bytes": 999,
+      "lines": 54,
+      "sha256": "256f64b4d1eef79be586c5d911a3582a0ec20a9e40f8e2b113ef060dddd99536"
+    },
+    {
+      "path": "dicts/目录/web-inf.txt",
+      "source": "tools/dicts",
+      "note": "WEB-INF 和 Java 应用内部路径。",
+      "tags": [
+        "目录",
+        "java"
+      ],
+      "bytes": 2915,
+      "lines": 78,
+      "sha256": "60939e900a1a945a8ac1eb53626f756ad216aea3503e8459e98fae7131a1744b"
+    },
+    {
+      "path": "dicts/目录/weblogic-路径.txt",
+      "source": "tools/dicts",
+      "note": "WebLogic 控制台和常见路径。",
+      "tags": [
+        "目录",
+        "weblogic"
+      ],
+      "bytes": 2616,
+      "lines": 162,
+      "sha256": "def5a9a419092a8ae07e6d836fc1e45cc06d4dea42e9cd7a8d9587d1b64c294b"
+    },
+    {
+      "path": "dicts/目录/参数名-top2万.txt",
+      "source": "tools/dicts",
+      "note": "HTTP 参数名约 2 万条。找隐藏参数时用，不要拿去扫目录。",
+      "tags": [
+        "目录",
+        "参数"
+      ],
+      "bytes": 202011,
+      "lines": 23270,
+      "sha256": "da585ead1106e05e18862963715cd01ddb94a3c85ead89149c388a0626c58de2"
+    },
+    {
+      "path": "dicts/目录/备份文件-不常用.txt",
+      "source": "tools/dicts",
+      "note": "不常见备份后缀。常见备份没有命中再试。",
+      "tags": [
+        "目录",
+        "备份"
+      ],
+      "bytes": 9679,
+      "lines": 678,
+      "sha256": "36a97d0a4434e3bf95ffebcc5b7b116d714f2d3506b621efc8f16f779212186e"
+    },
+    {
+      "path": "dicts/目录/备份文件-常见.txt",
+      "source": "tools/dicts",
+      "note": "常见网站备份和压缩包文件名。",
+      "tags": [
+        "目录",
+        "备份"
+      ],
+      "bytes": 34698,
+      "lines": 2968,
+      "sha256": "d41c04b19aa4959835a8c8f552f7d1a6958f0bc420e166eaf602925ee9d03703"
+    },
+    {
+      "path": "dicts/目录/敏感文件-top200.txt",
+      "source": "tools/dicts",
+      "note": "最常见的 200 个敏感文件和后台入口。目录爆破先用这本。",
+      "tags": [
+        "目录",
+        "敏感文件"
+      ],
+      "bytes": 2481,
+      "lines": 201,
+      "sha256": "73bdc490297b08dc9e08d13b553626bc2561328b126eb7e35a14fe6413fe4871"
+    },
+    {
+      "path": "dicts/目录/敏感文件-top2000.txt",
+      "source": "tools/dicts",
+      "note": "敏感文件和后台路径约 2000 条。top200 没有新发现再升。",
+      "tags": [
+        "目录",
+        "敏感文件"
+      ],
+      "bytes": 15991,
+      "lines": 1278,
+      "sha256": "418fea51795a2ae818a953ccbab8559dd1c00bf5fab9c9ee27a43438f709744e"
+    },
+    {
+      "path": "dicts/目录/敏感文件.txt",
+      "source": "tools/dicts",
+      "note": "配置、备份、安装残留等敏感文件名。",
+      "tags": [
+        "目录",
+        "敏感文件"
+      ],
+      "bytes": 18373,
+      "lines": 1370,
+      "sha256": "167a7aa78f64dcbaff44064556092fdfc2bbabfd08184a3a4613c83f4338dedd"
+    },
+    {
+      "path": "dicts/目录/敏感路径-短.txt",
+      "source": "tools/dicts",
+      "note": "短路径词，覆盖常见后台、依赖目录和配置文件名。",
+      "tags": [
+        "目录"
+      ],
+      "bytes": 17953,
+      "lines": 1308,
+      "sha256": "6abaecb4ebd19e12b0060e4d3c8477d6d98db192d2f32e0abb78f5ec0e820a1c"
+    },
+    {
+      "path": "dicts/目录/环境文件.txt",
+      "source": "tools/dicts",
+      "note": "环境变量和 .env 一类泄露路径。",
+      "tags": [
+        "目录",
+        "配置"
+      ],
+      "bytes": 12437,
+      "lines": 591,
+      "sha256": "14a11249e62878165389178427d81cbb154aa877766a4f1b56c73fe8091b8743"
+    },
+    {
+      "path": "dicts/目录/网站后台-top2万.txt",
+      "source": "tools/dicts",
+      "note": "网站后台路径约 2 万条。小表没有管理入口时再用，不要当开局词表。",
+      "tags": [
+        "目录",
+        "后台"
+      ],
+      "bytes": 263124,
+      "lines": 20100,
+      "sha256": "39d7ff4aaaa13eed0c97daab66a8e5a0925fe1063759e52af802e5c5ad625120"
+    },
+    {
+      "path": "dicts/目录/配置文件.txt",
+      "source": "tools/dicts",
+      "note": "常见配置文件名。",
+      "tags": [
+        "目录",
+        "配置"
+      ],
+      "bytes": 1051,
+      "lines": 49,
+      "sha256": "117a990c3b01e34f0f70747430c1f31464e8c7522e84f09eea675a8dc3b90a00"
+    },
+    {
+      "path": "skills/Dic/_meta.yaml",
+      "source": "skills/Dic",
+      "note": "",
+      "tags": [],
+      "bytes": 412,
+      "lines": 10,
+      "sha256": "f7ff9ff62469cb2c806ba6da2b8e96a7186f9409363a90112311824506dce229"
+    },
+    {
+      "path": "skills/Dic/auth/_meta.yaml",
+      "source": "skills/Dic",
+      "note": "",
+      "tags": [],
+      "bytes": 424,
+      "lines": 10,
+      "sha256": "2c51c2fb4d247abff93388f64ee4ebd1fec9b7e214b43f98af7ba7db4b4c61c5"
+    },
+    {
+      "path": "skills/Dic/auth/credential-pair.txt",
+      "source": "skills/Dic",
+      "note": "",
+      "tags": [],
+      "bytes": 10105,
+      "lines": 701,
+      "sha256": "6d4712859553a34c7d35ef47eae563eba05560d4701019c31cac43c1e7f65298"
+    },
+    {
+      "path": "skills/Dic/auth/device-default/_meta.yaml",
+      "source": "skills/Dic",
+      "note": "",
+      "tags": [],
+      "bytes": 1258,
+      "lines": 17,
+      "sha256": "42c36323edfa7c14662c1271af11cd1a3b31f8c6d09ae30ad0f4b5a62415b278"
+    },
+    {
+      "path": "skills/Dic/auth/device-default/oa-system-default.txt",
+      "source": "skills/Dic",
+      "note": "",
+      "tags": [],
+      "bytes": 77,
+      "lines": 6,
+      "sha256": "6d6f77b5b0fe40f6f0fb97fe1c1b79e10360174ca0f1d00e6fd898d0bc592081"
+    },
+    {
+      "path": "skills/Dic/auth/device-default/README.md",
+      "source": "skills/Dic",
+      "note": "",
+      "tags": [],
+      "bytes": 1420,
+      "lines": 26,
+      "sha256": "fbcfeb88e08a809c895caad3876e40e64fab7be25f320f8aab2729165f8e3dd8"
+    },
+    {
+      "path": "skills/Dic/auth/device-default/security-appliance-default.txt",
+      "source": "skills/Dic",
+      "note": "",
+      "tags": [],
+      "bytes": 564,
+      "lines": 35,
+      "sha256": "57cf1d3867bbdcb65cd3051e27d47b8a5f78b66e97f2f7aad5ecdafb35e1e8b8"
+    },
+    {
+      "path": "skills/Dic/auth/flask/_meta.yaml",
+      "source": "skills/Dic",
+      "note": "",
+      "tags": [],
+      "bytes": 478,
+      "lines": 11,
+      "sha256": "fa3079028b4aee3ada78735aca8ce3ca65ec5afc2e8a19c5308ed08df95253e1"
+    },
+    {
+      "path": "skills/Dic/auth/flask/flask-secret-key.txt",
+      "source": "skills/Dic",
+      "note": "",
+      "tags": [],
+      "bytes": 195,
+      "lines": 13,
+      "sha256": "85cbbc3046507f88b00ecb89e34845a3efd952bf7658a7d3ffe335b71bb0d5bb"
+    },
+    {
+      "path": "skills/Dic/auth/jwt/_meta.yaml",
+      "source": "skills/Dic",
+      "note": "",
+      "tags": [],
+      "bytes": 412,
+      "lines": 11,
+      "sha256": "36b3cc3f9af6bb7599bc9ee74e174dd475c70ef7bb18aadfe713b26732865e4c"
+    },
+    {
+      "path": "skills/Dic/auth/jwt/jwt-secret.txt",
+      "source": "skills/Dic",
+      "note": "",
+      "tags": [],
+      "bytes": 431,
+      "lines": 43,
+      "sha256": "0910b2c3b0b0b60784a58325912e962fcc6b2c9b583df6bf90363d9a33a9473e"
+    },
+    {
+      "path": "skills/Dic/auth/password/_meta.yaml",
+      "source": "skills/Dic",
+      "note": "",
+      "tags": [],
+      "bytes": 1944,
+      "lines": 41,
+      "sha256": "1c729d095a8101f3644a9b62cac23d1f1321527d50bdb7bf4071700d8121d06f"
+    },
+    {
+      "path": "skills/Dic/auth/password/complex/_meta.yaml",
+      "source": "skills/Dic",
+      "note": "",
+      "tags": [],
+      "bytes": 3838,
+      "lines": 86,
+      "sha256": "38efb696c9c7cc93edb91cdee822c2b847bd6ebab43fc241a2b2045ecedcfe90"
+    },
+    {
+      "path": "skills/Dic/auth/password/complex/alphanum-6char.txt",
+      "source": "skills/Dic",
+      "note": "",
+      "tags": [],
+      "bytes": 740541,
+      "lines": 76906,
+      "sha256": "cea38fd1bfc2b7e7fec75c0dd812706dbdf2a4dbb3e07f52f68ed709bf4c95fa"
+    },
+    {
+      "path": "skills/Dic/auth/password/complex/alphanum-8char.txt",
+      "source": "skills/Dic",
+      "note": "",
+      "tags": [],
+      "bytes": 619038,
+      "lines": 60851,
+      "sha256": "f43b3c13326fd1c1e74f84a6680001a8abe2c91f15eb334a57c9f63fe70be9b9"
+    },
+    {
+      "path": "skills/Dic/auth/password/complex/complex-6char-all-four-rules.txt",
+      "source": "skills/Dic",
+      "note": "",
+      "tags": [],
+      "bytes": 34660,
+      "lines": 2973,
+      "sha256": "ed6ee3d5bfbcb341ec0549cff909482b114bbc28fcbb55db880dbd254b0a6b3d"
+    },
+    {
+      "path": "skills/Dic/auth/password/complex/complex-6char-alpha-digit-special.txt",
+      "source": "skills/Dic",
+      "note": "",
+      "tags": [],
+      "bytes": 305104,
+      "lines": 27564,
+      "sha256": "da678da71f6134409982a86a5448524372ad8ce9bcd11ea1464bca0262bfa359"
+    },
+    {
+      "path": "skills/Dic/auth/password/complex/complex-6char-three-of-four.txt",
+      "source": "skills/Dic",
+      "note": "",
+      "tags": [],
+      "bytes": 1086520,
+      "lines": 107961,
+      "sha256": "37353efce2803d2fa1425165d84808c7f0fcbf6797a9e6f32fade7653aecaad5"
+    },
+    {
+      "path": "skills/Dic/auth/password/complex/complex-6char-upper-lower-digit-no-repeat.txt",
+      "source": "skills/Dic",
+      "note": "",
+      "tags": [],
+      "bytes": 740541,
+      "lines": 76906,
+      "sha256": "15ac33a0fb8c6e7803f2abe8f5363e9406a97ddce9f72bcbdaac4c47679dc302"
+    },
+    {
+      "path": "skills/Dic/auth/password/complex/complex-6char-upper-lower-digit.txt",
+      "source": "skills/Dic",
+      "note": "",
+      "tags": [],
+      "bytes": 730972,
+      "lines": 75946,
+      "sha256": "81bbaff093c03d29baf7e785afc7efef6380f27bba5d3a19359e091d20438a65"
+    },
+    {
+      "path": "skills/Dic/auth/password/complex/complex-8char-all-four-rules.txt",
+      "source": "skills/Dic",
+      "note": "",
+      "tags": [],
+      "bytes": 31597,
+      "lines": 2549,
+      "sha256": "ea1a8caee99bd22f21ef1cb740b627220cb2ecdd8b326cf8e96ffc6ec2119fc9"
+    },
+    {
+      "path": "skills/Dic/auth/password/complex/complex-8char-alpha-digit-special.txt",
+      "source": "skills/Dic",
+      "note": "",
+      "tags": [],
+      "bytes": 299773,
+      "lines": 26858,
+      "sha256": "1fcdad0aafefc904d702861aed066932c0bdd62bc1a202992f20a2aa1f7eec2b"
+    },
+    {
+      "path": "skills/Dic/auth/password/complex/complex-8char-three-of-four.txt",
+      "source": "skills/Dic",
+      "note": "",
+      "tags": [],
+      "bytes": 960262,
+      "lines": 91282,
+      "sha256": "494c9044718137195b7a8b2acf35f5f71f35f3f9495f477386fcd4b8df42ef23"
+    },
+    {
+      "path": "skills/Dic/auth/password/complex/complex-8char-upper-lower-digit-no-repeat.txt",
+      "source": "skills/Dic",
+      "note": "",
+      "tags": [],
+      "bytes": 619038,
+      "lines": 60851,
+      "sha256": "f43b3c13326fd1c1e74f84a6680001a8abe2c91f15eb334a57c9f63fe70be9b9"
+    },
+    {
+      "path": "skills/Dic/auth/password/complex/complex-8char-upper-lower-digit.txt",
+      "source": "skills/Dic",
+      "note": "",
+      "tags": [],
+      "bytes": 610200,
+      "lines": 59996,
+      "sha256": "f03dfef56482542fcd3cacfcc4aa1d029f9d7875ba0a65973dba71c5b6c2dea5"
+    },
+    {
+      "path": "skills/Dic/auth/password/complex/complex-top100.txt",
+      "source": "skills/Dic",
+      "note": "",
+      "tags": [],
+      "bytes": 1010,
+      "lines": 104,
+      "sha256": "abb2168c9b7c47989033e6ec8c1df49d535abf3aed10333fc58c5ab2545d3d33"
+    },
+    {
+      "path": "skills/Dic/auth/password/complex/complex-top1000.txt",
+      "source": "skills/Dic",
+      "note": "",
+      "tags": [],
+      "bytes": 13873,
+      "lines": 1299,
+      "sha256": "ab3e27ef571e15927215d273fcc79d717b87865d9f826667b917695c64fc4fc0"
+    },
+    {
+      "path": "skills/Dic/auth/password/complex/complex-top30.txt",
+      "source": "skills/Dic",
+      "note": "",
+      "tags": [],
+      "bytes": 326,
+      "lines": 35,
+      "sha256": "4f5e2075ba819a91056628dbfb9a26ba15c89b61bfabdacacb8efc881e83b284"
+    },
+    {
+      "path": "skills/Dic/auth/password/complex/readme.md",
+      "source": "skills/Dic",
+      "note": "",
+      "tags": [],
+      "bytes": 425,
+      "lines": 20,
+      "sha256": "d65ef913b978ab3917046f7614950ab8cc55d604e19a0a3a7d7fdf694bf7f510"
+    },
+    {
+      "path": "skills/Dic/auth/password/pass-admin.txt",
+      "source": "skills/Dic",
+      "note": "",
+      "tags": [],
+      "bytes": 7025,
+      "lines": 586,
+      "sha256": "ca3573ce1c2bfea806ed7625c5487d820e780851ed0db90b0c5bc929cffde790"
+    },
+    {
+      "path": "skills/Dic/auth/password/password-top10.txt",
+      "source": "skills/Dic",
+      "note": "",
+      "tags": [],
+      "bytes": 78,
+      "lines": 10,
+      "sha256": "415d5ec73093c842dbd01b28cabc501ba718465a7ae57887a0f61ab282f741b4"
+    },
+    {
+      "path": "skills/Dic/auth/password/password-top100.txt",
+      "source": "skills/Dic",
+      "note": "",
+      "tags": [],
+      "bytes": 1520,
+      "lines": 173,
+      "sha256": "5dabf9d6cbf34c440781a33e0d4f775bfc9c1066a411bb0424f5ef28e79c4e59"
+    },
+    {
+      "path": "skills/Dic/auth/password/password-top1000.txt",
+      "source": "skills/Dic",
+      "note": "",
+      "tags": [],
+      "bytes": 16220,
+      "lines": 1888,
+      "sha256": "6d627779de8c60bc26b04dbcc7fde2e091f7ed47bf70caa39bce3d246a4be495"
+    },
+    {
+      "path": "skills/Dic/auth/password/password-top100000.txt",
+      "source": "skills/Dic",
+      "note": "",
+      "tags": [],
+      "bytes": 805573,
+      "lines": 94123,
+      "sha256": "a323becbd11578615e6a0ec87ccdb46d67d14054efb476be5badd0f603040642"
+    },
+    {
+      "path": "skills/Dic/auth/password/password-top20000.txt",
+      "source": "skills/Dic",
+      "note": "",
+      "tags": [],
+      "bytes": 165181,
+      "lines": 19315,
+      "sha256": "19456c02052bef0be3f91ae4e9c9443d3cff76dce10147d64370e8305699f306"
+    },
+    {
+      "path": "skills/Dic/auth/password/sql.txt",
+      "source": "skills/Dic",
+      "note": "",
+      "tags": [],
+      "bytes": 1902,
+      "lines": 121,
+      "sha256": "5835778d76c2240a833c090f77e47ce45cb098809b14e25b348aa061064325a6"
+    },
+    {
+      "path": "skills/Dic/auth/password/wpa/_meta.yaml",
+      "source": "skills/Dic",
+      "note": "",
+      "tags": [],
+      "bytes": 856,
+      "lines": 26,
+      "sha256": "5ddb2b0b9c5106efa78028e6ca76e929d9d34e47120d8afc578722e9edf1c91e"
+    },
+    {
+      "path": "skills/Dic/auth/password/wpa/top200000-wpa.txt",
+      "source": "skills/Dic",
+      "note": "",
+      "tags": [],
+      "bytes": 2121749,
+      "lines": 203806,
+      "sha256": "39e7048c3148efe2ccafa52cdebf3d2febbb5bb42fdf5d1b9efffa3c15cf07ae"
+    },
+    {
+      "path": "skills/Dic/auth/password/wpa/top447-wpa.txt",
+      "source": "skills/Dic",
+      "note": "",
+      "tags": [],
+      "bytes": 4147,
+      "lines": 447,
+      "sha256": "f91d01ff2ec66dbfbc11dda559c8366c8f45d6f60ac45736facacf713401686f"
+    },
+    {
+      "path": "skills/Dic/auth/password/wpa/top4800-wpa.txt",
+      "source": "skills/Dic",
+      "note": "",
+      "tags": [],
+      "bytes": 45275,
+      "lines": 4800,
+      "sha256": "6df328288180cb301bd1714782a6464c6857d6a38cca0fa0e85cfbaf051c725f"
+    },
+    {
+      "path": "skills/Dic/auth/password/wpa/top62-wpa.txt",
+      "source": "skills/Dic",
+      "note": "",
+      "tags": [],
+      "bytes": 572,
+      "lines": 62,
+      "sha256": "0a7ebc0e30e792e13c9606ef8d74e902235d3fb20bf24eafaf74b7f0dba09be0"
+    },
+    {
+      "path": "skills/Dic/auth/username/_meta.yaml",
+      "source": "skills/Dic",
+      "note": "",
+      "tags": [],
+      "bytes": 1349,
+      "lines": 36,
+      "sha256": "3d7a58aba06696dc527a4789a3a57478246b8abec13eca108ef8564f5b9559d8"
+    },
+    {
+      "path": "skills/Dic/auth/username/cn-email.txt",
+      "source": "skills/Dic",
+      "note": "",
+      "tags": [],
+      "bytes": 4911,
+      "lines": 309,
+      "sha256": "1fdf4db3680eb26e37ffca0e70d41e5d51ae614cdccc5b6c328379dfb0084e45"
+    },
+    {
+      "path": "skills/Dic/auth/username/cn-phone.txt",
+      "source": "skills/Dic",
+      "note": "",
+      "tags": [],
+      "bytes": 4140,
+      "lines": 345,
+      "sha256": "fc16f4aa09bc22c9ba8236a757c9dddca85518d19d0ac2884971ee2c9de1a14e"
+    },
+    {
+      "path": "skills/Dic/auth/username/pinyin/_meta.yaml",
+      "source": "skills/Dic",
+      "note": "",
+      "tags": [],
+      "bytes": 2249,
+      "lines": 56,
+      "sha256": "57bd39afa112b0c75cd21390588b1561a0edd69f1678f482a8cfd77ad700f101"
+    },
+    {
+      "path": "skills/Dic/auth/username/pinyin/cn-firstname.txt",
+      "source": "skills/Dic",
+      "note": "",
+      "tags": [],
+      "bytes": 685,
+      "lines": 128,
+      "sha256": "09afd370cb94ec85a8774e6cd06e0c8d1c6140575f95767ccb3a5c730ff07f3e"
+    },
+    {
+      "path": "skills/Dic/auth/username/pinyin/cn-fullname-14k.txt",
+      "source": "skills/Dic",
+      "note": "",
+      "tags": [],
+      "bytes": 123749,
+      "lines": 14391,
+      "sha256": "0d31c6ff991c23052363008ef98de44cf888247accf06f88690a6314bcb1dd0c"
+    },
+    {
+      "path": "skills/Dic/auth/username/pinyin/cn-fullname-1k.txt",
+      "source": "skills/Dic",
+      "note": "",
+      "tags": [],
+      "bytes": 9167,
+      "lines": 1068,
+      "sha256": "e4123f4324a3308859e3373470ef52a4162c6cb6db614fcc5abbb8afb6ab5431"
+    },
+    {
+      "path": "skills/Dic/auth/username/pinyin/cn-surname.txt",
+      "source": "skills/Dic",
+      "note": "",
+      "tags": [],
+      "bytes": 500,
+      "lines": 117,
+      "sha256": "ff86051317943e1dd76bb18abc209ba1be5cfb5097a70fbfb958af43ca2385ee"
+    },
+    {
+      "path": "skills/Dic/auth/username/pinyin/lastname.txt",
+      "source": "skills/Dic",
+      "note": "",
+      "tags": [],
+      "bytes": 819,
+      "lines": 189,
+      "sha256": "02fb5da204841dbabfd1def7e98930773c218441b6801ed4525c64b73833155f"
+    },
+    {
+      "path": "skills/Dic/auth/username/pinyin/pinyin-abbrev.txt",
+      "source": "skills/Dic",
+      "note": "",
+      "tags": [],
+      "bytes": 9780,
+      "lines": 1443,
+      "sha256": "5c1637623da73f2d474f5800d0d72c286a4f7eb41fc39f380accf006a44dc83c"
+    },
+    {
+      "path": "skills/Dic/auth/username/pinyin/pinyin-dot-fullname.txt",
+      "source": "skills/Dic",
+      "note": "",
+      "tags": [],
+      "bytes": 10668,
+      "lines": 1133,
+      "sha256": "073e4d60d2bf6656defe0a6d8443d957f29c62426f95a9c6d99545f98c925709"
+    },
+    {
+      "path": "skills/Dic/auth/username/pinyin/pinyin-firstname.txt",
+      "source": "skills/Dic",
+      "note": "",
+      "tags": [],
+      "bytes": 9996,
+      "lines": 1403,
+      "sha256": "30350a22ec1aaeba348b85e38382171d5fb10915e5a4c5760f81767caa4b6371"
+    },
+    {
+      "path": "skills/Dic/auth/username/pinyin/pinyin-fullname.txt",
+      "source": "skills/Dic",
+      "note": "",
+      "tags": [],
+      "bytes": 9640,
+      "lines": 991,
+      "sha256": "67796a909a3c543d43e9c97bccf7fd1dd949a13e492383b4ef45de896d9544ae"
+    },
+    {
+      "path": "skills/Dic/auth/username/pinyin/pinyin-initials.txt",
+      "source": "skills/Dic",
+      "note": "",
+      "tags": [],
+      "bytes": 775,
+      "lines": 217,
+      "sha256": "7b85c288c301bf84bc4a3ce25f569145dc9c3e0f623afe382a02365e4ad078de"
+    },
+    {
+      "path": "skills/Dic/auth/username/user-mail.txt",
+      "source": "skills/Dic",
+      "note": "",
+      "tags": [],
+      "bytes": 404,
+      "lines": 59,
+      "sha256": "b00ed29f95ca248e8b9174331abdceff91d102e3c2779b595b40c6be2cbea576"
+    },
+    {
+      "path": "skills/Dic/auth/username/user-us.txt",
+      "source": "skills/Dic",
+      "note": "",
+      "tags": [],
+      "bytes": 17753,
+      "lines": 2092,
+      "sha256": "4c7b19415b5887134ed7a9bacdef28950f5dcf7fa3d3525d2e0bf763c519e748"
+    },
+    {
+      "path": "skills/Dic/auth/username/user-web.txt",
+      "source": "skills/Dic",
+      "note": "",
+      "tags": [],
+      "bytes": 855,
+      "lines": 113,
+      "sha256": "94453f25d33cfe7b60347968833543a5002a0f737d9908585fa03418235e1bde"
+    },
+    {
+      "path": "skills/Dic/auth/username/username-top10000.txt",
+      "source": "skills/Dic",
+      "note": "",
+      "tags": [],
+      "bytes": 74819,
+      "lines": 10415,
+      "sha256": "89d4fd8bd019d53d0f5979e4cf2bc96d81dc969d88dcfd29ccbf7d4ed5fe9446"
+    },
+    {
+      "path": "skills/Dic/network/_meta.yaml",
+      "source": "skills/Dic",
+      "note": "",
+      "tags": [],
+      "bytes": 770,
+      "lines": 20,
+      "sha256": "f3564016b9d2dcea8523ebe265360028682e88c31573acefc2587340381648ca"
+    },
+    {
+      "path": "skills/Dic/network/dns-servers.txt",
+      "source": "skills/Dic",
+      "note": "",
+      "tags": [],
+      "bytes": 118,
+      "lines": 10,
+      "sha256": "e743a2958fceaee7da1bbf388bb5f149ec046b26681ce0bc279c7b2fce1a42d4"
+    },
+    {
+      "path": "skills/Dic/network/exclude.txt",
+      "source": "skills/Dic",
+      "note": "",
+      "tags": [],
+      "bytes": 250,
+      "lines": 18,
+      "sha256": "42b93b58ea78567f30f842980c612d58bfe857d614b7486153918751dd96c256"
+    },
+    {
+      "path": "skills/Dic/network/local-ip.txt",
+      "source": "skills/Dic",
+      "note": "",
+      "tags": [],
+      "bytes": 824,
+      "lines": 55,
+      "sha256": "b4ca8409b1b5f1111a1e6d55fc29abf77af35dd021ed649cf041d21fca8c902c"
+    },
+    {
+      "path": "skills/Dic/network/subdomain/_meta.yaml",
+      "source": "skills/Dic",
+      "note": "",
+      "tags": [],
+      "bytes": 749,
+      "lines": 11,
+      "sha256": "e44462291001761a779424066c9001b500b7aa960d250a8c7627369c907d19a2"
+    },
+    {
+      "path": "skills/Dic/network/subdomain/subdomain-common.txt",
+      "source": "skills/Dic",
+      "note": "",
+      "tags": [],
+      "bytes": 778,
+      "lines": 151,
+      "sha256": "c6cddcd245d1f5304d1a9e3b8f11c91bdf88a087fee7cf76257f87365a99dc79"
+    },
+    {
+      "path": "skills/Dic/port/_meta.yaml",
+      "source": "skills/Dic",
+      "note": "",
+      "tags": [],
+      "bytes": 535,
+      "lines": 15,
+      "sha256": "7e8a767e2ca34a22b33dc336d3d30255bebe1dfa1cc377be106c3120fbda4520"
+    },
+    {
+      "path": "skills/Dic/port/db2/_meta.yaml",
+      "source": "skills/Dic",
+      "note": "",
+      "tags": [],
+      "bytes": 437,
+      "lines": 16,
+      "sha256": "ec8f62a4f4d7ed93c796100ff61c944ef5f2d37c4387245d0a5c764252cbe3a6"
+    },
+    {
+      "path": "skills/Dic/port/db2/pass.txt",
+      "source": "skills/Dic",
+      "note": "",
+      "tags": [],
+      "bytes": 15,
+      "lines": 2,
+      "sha256": "d8f8da566e6b843bbb43f175c3fac1cea73131c1b31cae8b548d1b7308a66fe9"
+    },
+    {
+      "path": "skills/Dic/port/db2/user.txt",
+      "source": "skills/Dic",
+      "note": "",
+      "tags": [],
+      "bytes": 32,
+      "lines": 4,
+      "sha256": "c077fe1f9d3498c7d6b4ac753469c8200c7ecaf3e15d4d67a2ecf9a5d9046a29"
+    },
+    {
+      "path": "skills/Dic/port/esxi/_meta.yaml",
+      "source": "skills/Dic",
+      "note": "",
+      "tags": [],
+      "bytes": 441,
+      "lines": 16,
+      "sha256": "cffdd0cac094fa7ba5d8e152d76b11aff66e5b46971fb527fa4a36b114b3f0e5"
+    },
+    {
+      "path": "skills/Dic/port/esxi/pass.txt",
+      "source": "skills/Dic",
+      "note": "",
+      "tags": [],
+      "bytes": 376,
+      "lines": 46,
+      "sha256": "c7a5acebeec81f1ad99d9e9d8a01d07aaef769c4d4c85127681830351a41b4d9"
+    },
+    {
+      "path": "skills/Dic/port/esxi/user.txt",
+      "source": "skills/Dic",
+      "note": "",
+      "tags": [],
+      "bytes": 29,
+      "lines": 5,
+      "sha256": "a767e3a520f6db18d4c9dd99eea218384afaf55996858ee9f09b60cefc986e08"
+    },
+    {
+      "path": "skills/Dic/port/ftp/_meta.yaml",
+      "source": "skills/Dic",
+      "note": "",
+      "tags": [],
+      "bytes": 425,
+      "lines": 16,
+      "sha256": "070de1394ccda778457cf2350b87fdfa535b4b7025eb0bbed21f4665ec9c1ef5"
+    },
+    {
+      "path": "skills/Dic/port/ftp/pass.txt",
+      "source": "skills/Dic",
+      "note": "",
+      "tags": [],
+      "bytes": 682,
+      "lines": 114,
+      "sha256": "178668d9b2c31394248e02073a5a24ec0bc020d80f3f2ab6ad0dd6bdc0598017"
+    },
+    {
+      "path": "skills/Dic/port/ftp/user.txt",
+      "source": "skills/Dic",
+      "note": "",
+      "tags": [],
+      "bytes": 68,
+      "lines": 12,
+      "sha256": "455af6789114b312c1dd3597e6415dfe8cc64d8690ccd390ca6721000d16e250"
+    },
+    {
+      "path": "skills/Dic/port/memcached/_meta.yaml",
+      "source": "skills/Dic",
+      "note": "",
+      "tags": [],
+      "bytes": 445,
+      "lines": 16,
+      "sha256": "fbbe1b3480a25e3ca0706a8876de7d0a78fc8bfa2cf7c4ced7b8a5b580061ba4"
+    },
+    {
+      "path": "skills/Dic/port/memcached/pass.txt",
+      "source": "skills/Dic",
+      "note": "",
+      "tags": [],
+      "bytes": 262,
+      "lines": 33,
+      "sha256": "101052f30300de6a8770dd02a708fb08375250ba7e51249856659b3e63f9e4e9"
+    },
+    {
+      "path": "skills/Dic/port/memcached/user.txt",
+      "source": "skills/Dic",
+      "note": "",
+      "tags": [],
+      "bytes": 19,
+      "lines": 4,
+      "sha256": "ddb6e310e930bc111ea1c42ee14d2fbc9bee1c94281e2b29a320acd5d99c7436"
+    },
+    {
+      "path": "skills/Dic/port/mongodb/_meta.yaml",
+      "source": "skills/Dic",
+      "note": "",
+      "tags": [],
+      "bytes": 442,
+      "lines": 16,
+      "sha256": "b2e05818094b532cb029634e5f56c3d78ec49f3867cb9860ab9fc86bc4834b41"
+    },
+    {
+      "path": "skills/Dic/port/mongodb/pass.txt",
+      "source": "skills/Dic",
+      "note": "",
+      "tags": [],
+      "bytes": 558,
+      "lines": 62,
+      "sha256": "f4d211c9f80e7b5f3674d1e912dbe2d548c39ff9efc914955ba3eb2ed38598f7"
+    },
+    {
+      "path": "skills/Dic/port/mongodb/user.txt",
+      "source": "skills/Dic",
+      "note": "",
+      "tags": [],
+      "bytes": 21,
+      "lines": 4,
+      "sha256": "37c7775096a018124201a74ede6d42a7047fe0a6e4354162f48d0c8dc2890a10"
+    },
+    {
+      "path": "skills/Dic/port/mysql/_meta.yaml",
+      "source": "skills/Dic",
+      "note": "",
+      "tags": [],
+      "bytes": 430,
+      "lines": 16,
+      "sha256": "90156e346373fd9b202980bc80cc7961370030718aa2d360106473024ddcb858"
+    },
+    {
+      "path": "skills/Dic/port/mysql/pass.txt",
+      "source": "skills/Dic",
+      "note": "",
+      "tags": [],
+      "bytes": 2215,
+      "lines": 233,
+      "sha256": "6aca2da55b64aaa5f6a26e0d514a6b0c4d0d57243938f0e1f4851a3eb75053e1"
+    },
+    {
+      "path": "skills/Dic/port/mysql/user.txt",
+      "source": "skills/Dic",
+      "note": "",
+      "tags": [],
+      "bytes": 34,
+      "lines": 7,
+      "sha256": "3a9bb08be15d9465a8196dd3d3cb6da0860788d043d1224030295ea6275e920e"
+    },
+    {
+      "path": "skills/Dic/port/oracle/_meta.yaml",
+      "source": "skills/Dic",
+      "note": "",
+      "tags": [],
+      "bytes": 829,
+      "lines": 26,
+      "sha256": "524d3308168cd5f9dd40c9e002477bbe3f5910c15faf8ff567e34f7d3c88a673"
+    },
+    {
+      "path": "skills/Dic/port/oracle/pass.txt",
+      "source": "skills/Dic",
+      "note": "",
+      "tags": [],
+      "bytes": 3397,
+      "lines": 511,
+      "sha256": "ba0ea7155d0481ca1bba1aef65e744674be2c029f118c7f0d2de666176bbce9f"
+    },
+    {
+      "path": "skills/Dic/port/oracle/sid.txt",
+      "source": "skills/Dic",
+      "note": "",
+      "tags": [],
+      "bytes": 3835,
+      "lines": 575,
+      "sha256": "5c2ffc4b5bda2ab2997284f6d818673f591a222aae74b9e97c9b670e70fce386"
+    },
+    {
+      "path": "skills/Dic/port/oracle/user-common.txt",
+      "source": "skills/Dic",
+      "note": "",
+      "tags": [],
+      "bytes": 56,
+      "lines": 10,
+      "sha256": "4c06e03c78ac151ac0ff13e3c6ec928322fd092d90550e0ac5adaa51b883cc77"
+    },
+    {
+      "path": "skills/Dic/port/oracle/user-extended.txt",
+      "source": "skills/Dic",
+      "note": "",
+      "tags": [],
+      "bytes": 3152,
+      "lines": 479,
+      "sha256": "f34e7cbb4dfd5e7a82be4c3002f42023a34ad54a30c4a60c1827037562ae8d2b"
+    },
+    {
+      "path": "skills/Dic/port/pop3/_meta.yaml",
+      "source": "skills/Dic",
+      "note": "",
+      "tags": [],
+      "bytes": 459,
+      "lines": 16,
+      "sha256": "77c156e183dc62797233a2dfab62cf4c4cd92699f731d12b6eb27275cbd3b5e6"
+    },
+    {
+      "path": "skills/Dic/port/pop3/pass.txt",
+      "source": "skills/Dic",
+      "note": "",
+      "tags": [],
+      "bytes": 203,
+      "lines": 27,
+      "sha256": "bd7dfb94ae93e930822e5924063c17a3dceace0005b6bead08023afc1669d88b"
+    },
+    {
+      "path": "skills/Dic/port/pop3/user.txt",
+      "source": "skills/Dic",
+      "note": "",
+      "tags": [],
+      "bytes": 14432,
+      "lines": 1502,
+      "sha256": "cf30261a7258348f14b46a6ba67abc8ffff629c5831d350d61550c82c8572e03"
+    },
+    {
+      "path": "skills/Dic/port/port-list.md",
+      "source": "skills/Dic",
+      "note": "",
+      "tags": [],
+      "bytes": 249444,
+      "lines": 5939,
+      "sha256": "237c2ff799867b6e17fcb14d7ef175f40ae55e239704d75cda07b07a44c3d248"
+    },
+    {
+      "path": "skills/Dic/port/port.txt",
+      "source": "skills/Dic",
+      "note": "",
+      "tags": [],
+      "bytes": 10445,
+      "lines": 2087,
+      "sha256": "1b90d882e10448198b4c28e9fa3d44a1991a9e2121535021da306674966e526e"
+    },
+    {
+      "path": "skills/Dic/port/postgresql/_meta.yaml",
+      "source": "skills/Dic",
+      "note": "",
+      "tags": [],
+      "bytes": 479,
+      "lines": 16,
+      "sha256": "1cb7860171dae83901c02d81af474eca9a0fdca1d01704562622803ccacccda7"
+    },
+    {
+      "path": "skills/Dic/port/postgresql/pass.txt",
+      "source": "skills/Dic",
+      "note": "",
+      "tags": [],
+      "bytes": 307,
+      "lines": 38,
+      "sha256": "dccff8e5c52da63630799e60cc367f8554b317db3a18e0319f53d4c55fb78c1e"
+    },
+    {
+      "path": "skills/Dic/port/postgresql/user.txt",
+      "source": "skills/Dic",
+      "note": "",
+      "tags": [],
+      "bytes": 19,
+      "lines": 3,
+      "sha256": "887dd0f63e88bdc55b7dd725b1f589ae8afd8ef75c1f1cb1ba3fc4661dacf89b"
+    },
+    {
+      "path": "skills/Dic/port/rdp/_meta.yaml",
+      "source": "skills/Dic",
+      "note": "",
+      "tags": [],
+      "bytes": 455,
+      "lines": 16,
+      "sha256": "ff7034eb195b2e28d1557447369eb08e9313da35cf25f2b3aec04893c522d7d4"
+    },
+    {
+      "path": "skills/Dic/port/rdp/pass.txt",
+      "source": "skills/Dic",
+      "note": "",
+      "tags": [],
+      "bytes": 2510,
+      "lines": 264,
+      "sha256": "e669a69183fe408689f4febd3eb87bb3ed31d7dae72f831f2162687463b03910"
+    },
+    {
+      "path": "skills/Dic/port/rdp/user.txt",
+      "source": "skills/Dic",
+      "note": "",
+      "tags": [],
+      "bytes": 206,
+      "lines": 27,
+      "sha256": "912dd5ececb3d50a9b2bc51109848abfbb06983c7e2a9976090f4350bddb6d60"
+    },
+    {
+      "path": "skills/Dic/port/redis/_meta.yaml",
+      "source": "skills/Dic",
+      "note": "",
+      "tags": [],
+      "bytes": 302,
+      "lines": 11,
+      "sha256": "070103515835a4a7eb745473ed6f83bb0a5822e5f0d676c913f1845d651494ef"
+    },
+    {
+      "path": "skills/Dic/port/redis/pass.txt",
+      "source": "skills/Dic",
+      "note": "",
+      "tags": [],
+      "bytes": 310,
+      "lines": 38,
+      "sha256": "4f084702f75c04cf2eccdf0be3617a8a9fce97160014995b37f1b934b63bc1f5"
+    },
+    {
+      "path": "skills/Dic/port/smtp/_meta.yaml",
+      "source": "skills/Dic",
+      "note": "",
+      "tags": [],
+      "bytes": 843,
+      "lines": 26,
+      "sha256": "06d5b1a61c03347ff9d1b0047775b6a897de96837f6caf71222a4f7a8048b708"
+    },
+    {
+      "path": "skills/Dic/port/smtp/cn-email-username.txt",
+      "source": "skills/Dic",
+      "note": "",
+      "tags": [],
+      "bytes": 14196,
+      "lines": 1960,
+      "sha256": "b1aea755daab6f6f4a2743b7bbc87b4eb9a6e85b565fa6ff5e247de54ecc5399"
+    },
+    {
+      "path": "skills/Dic/port/smtp/pass.txt",
+      "source": "skills/Dic",
+      "note": "",
+      "tags": [],
+      "bytes": 203,
+      "lines": 27,
+      "sha256": "bd7dfb94ae93e930822e5924063c17a3dceace0005b6bead08023afc1669d88b"
+    },
+    {
+      "path": "skills/Dic/port/smtp/us-email-username.txt",
+      "source": "skills/Dic",
+      "note": "",
+      "tags": [],
+      "bytes": 17754,
+      "lines": 2093,
+      "sha256": "1550809474887dfe833a13ab9e6c2f08df1422bd3937cc42e3de37cdbce0bed9"
+    },
+    {
+      "path": "skills/Dic/port/smtp/user.txt",
+      "source": "skills/Dic",
+      "note": "",
+      "tags": [],
+      "bytes": 14432,
+      "lines": 1502,
+      "sha256": "cf30261a7258348f14b46a6ba67abc8ffff629c5831d350d61550c82c8572e03"
+    },
+    {
+      "path": "skills/Dic/port/snmp/_meta.yaml",
+      "source": "skills/Dic",
+      "note": "",
+      "tags": [],
+      "bytes": 368,
+      "lines": 11,
+      "sha256": "3654028e84ef9fee0375a9e82efa985de3e7eea403d97378d5c3435ab1b97da9"
+    },
+    {
+      "path": "skills/Dic/port/snmp/pass.txt",
+      "source": "skills/Dic",
+      "note": "",
+      "tags": [],
+      "bytes": 837,
+      "lines": 119,
+      "sha256": "7c5dc4a9e25aae4482211a940323efe6dd76e58882cb642869f74ab4874b164b"
+    },
+    {
+      "path": "skills/Dic/port/sqlserver/_meta.yaml",
+      "source": "skills/Dic",
+      "note": "",
+      "tags": [],
+      "bytes": 472,
+      "lines": 16,
+      "sha256": "e163b2cbc1541e792ec6b3414c87ed03c4af3a663ea8ebb2c217cd60b4918aa2"
+    },
+    {
+      "path": "skills/Dic/port/sqlserver/pass.txt",
+      "source": "skills/Dic",
+      "note": "",
+      "tags": [],
+      "bytes": 1865,
+      "lines": 198,
+      "sha256": "b439d89ffa2e02a99fb9363cafb4cef717e04050ee10fa28e477e1432de2425c"
+    },
+    {
+      "path": "skills/Dic/port/sqlserver/user.txt",
+      "source": "skills/Dic",
+      "note": "",
+      "tags": [],
+      "bytes": 28,
+      "lines": 6,
+      "sha256": "e3f81779c7d074bc141fb0567c2972bc0a17f64161fd41ab99d32a0cc9491109"
+    },
+    {
+      "path": "skills/Dic/port/ssh/_meta.yaml",
+      "source": "skills/Dic",
+      "note": "",
+      "tags": [
+        "ssh"
+      ],
+      "bytes": 777,
+      "lines": 26,
+      "sha256": "511a26f8fc0748aa8200060ac8de9161cf4021865c6b080ae8962a8392334686"
+    },
+    {
+      "path": "skills/Dic/port/ssh/pass-common.txt",
+      "source": "skills/Dic",
+      "note": "",
+      "tags": [
+        "ssh"
+      ],
+      "bytes": 837,
+      "lines": 107,
+      "sha256": "b9392413f1a875ced9e85498e5e5ed9241122f3f064c9f3544732c6fd6415d54"
+    },
+    {
+      "path": "skills/Dic/port/ssh/pass-extended.txt",
+      "source": "skills/Dic",
+      "note": "",
+      "tags": [
+        "ssh"
+      ],
+      "bytes": 2935,
+      "lines": 300,
+      "sha256": "8f78cd82957eb80f63f44f6efa61870c2865ce2e6717d61a4aedf0629ce1eede"
+    },
+    {
+      "path": "skills/Dic/port/ssh/user-common.txt",
+      "source": "skills/Dic",
+      "note": "",
+      "tags": [
+        "ssh"
+      ],
+      "bytes": 36,
+      "lines": 6,
+      "sha256": "08e597638ee18c2d3f0bcbfdc3cec72bc9d1958b658dafddfbec984c2c505a1f"
+    },
+    {
+      "path": "skills/Dic/port/ssh/user-extended.txt",
+      "source": "skills/Dic",
+      "note": "",
+      "tags": [
+        "ssh"
+      ],
+      "bytes": 155,
+      "lines": 26,
+      "sha256": "22b626c61f7a1ddf14b790976990bf59c37038ab177cfce329dfabd40dd1e45d"
+    },
+    {
+      "path": "skills/Dic/port/svn/_meta.yaml",
+      "source": "skills/Dic",
+      "note": "",
+      "tags": [],
+      "bytes": 436,
+      "lines": 16,
+      "sha256": "109ee2e63c17423b90345b0cf13e51c1ea837bf883be3ffadf86e06806e881c9"
+    },
+    {
+      "path": "skills/Dic/port/svn/pass.txt",
+      "source": "skills/Dic",
+      "note": "",
+      "tags": [],
+      "bytes": 177,
+      "lines": 22,
+      "sha256": "1d9e7b86204cf8a143f07df93cb6df9c310cb1d2830fb024adaf7624369bdc4f"
+    },
+    {
+      "path": "skills/Dic/port/svn/user.txt",
+      "source": "skills/Dic",
+      "note": "",
+      "tags": [],
+      "bytes": 24,
+      "lines": 5,
+      "sha256": "17eba81176c1b208bf7b482e7345286c9877c8b94205b11f18ac8a949ae81dc9"
+    },
+    {
+      "path": "skills/Dic/port/telnet/_meta.yaml",
+      "source": "skills/Dic",
+      "note": "",
+      "tags": [],
+      "bytes": 452,
+      "lines": 16,
+      "sha256": "4283a5bedc11a364a411fc5b6858682bb2fbf6548bcea93de1ad217eec690450"
+    },
+    {
+      "path": "skills/Dic/port/telnet/pass.txt",
+      "source": "skills/Dic",
+      "note": "",
+      "tags": [],
+      "bytes": 218,
+      "lines": 28,
+      "sha256": "4d2dfa482074275b0038e0a850039069b7c1752dbee9d10958e266a2793d6e9e"
+    },
+    {
+      "path": "skills/Dic/port/telnet/user.txt",
+      "source": "skills/Dic",
+      "note": "",
+      "tags": [],
+      "bytes": 24,
+      "lines": 5,
+      "sha256": "c172e45ba1915fff65b8d5608a41725bd36320a0363a3fdda68eb82678117e9c"
+    },
+    {
+      "path": "skills/Dic/port/vnc/_meta.yaml",
+      "source": "skills/Dic",
+      "note": "",
+      "tags": [],
+      "bytes": 301,
+      "lines": 11,
+      "sha256": "f1effe387b89c67095504e20525d4dd7d2a6458a73bca63d238b532df1c0c341"
+    },
+    {
+      "path": "skills/Dic/port/vnc/pass.txt",
+      "source": "skills/Dic",
+      "note": "",
+      "tags": [],
+      "bytes": 259,
+      "lines": 31,
+      "sha256": "c3d430a9d3ba27113d8cfe97f485edf6de8079e4ac6dd03464a16abd61af9726"
+    },
+    {
+      "path": "skills/Dic/port/weblogic/_meta.yaml",
+      "source": "skills/Dic",
+      "note": "",
+      "tags": [],
+      "bytes": 484,
+      "lines": 16,
+      "sha256": "45d61a557e6d34747dbcd11ddaa61258fdcdfa28dfbe013244a2d20e4b19bfeb"
+    },
+    {
+      "path": "skills/Dic/port/weblogic/pass.txt",
+      "source": "skills/Dic",
+      "note": "",
+      "tags": [],
+      "bytes": 30,
+      "lines": 3,
+      "sha256": "1d78b0c216fa708105d65f501035900518417a54b157f7c50cf991d71678642d"
+    },
+    {
+      "path": "skills/Dic/port/weblogic/user.txt",
+      "source": "skills/Dic",
+      "note": "",
+      "tags": [],
+      "bytes": 8,
+      "lines": 1,
+      "sha256": "8443a814600766bbf5bc87725ebc9c7635651af65c3f67ef86a25d11e24559cc"
+    },
+    {
+      "path": "skills/Dic/readme.md",
+      "source": "skills/Dic",
+      "note": "",
+      "tags": [],
+      "bytes": 1787,
+      "lines": 95,
+      "sha256": "65b2678458943fc0d770fe0c1b5a5910aea1883b975e78a49fa4bf3d13772ab7"
+    },
+    {
+      "path": "skills/Dic/regular/_meta.yaml",
+      "source": "skills/Dic",
+      "note": "",
+      "tags": [],
+      "bytes": 544,
+      "lines": 15,
+      "sha256": "dacb4dbecea64435be5c0718c421d3d68eee4f414ca05c5c98a048203a42a0e3"
+    },
+    {
+      "path": "skills/Dic/regular/address/_meta.yaml",
+      "source": "skills/Dic",
+      "note": "",
+      "tags": [],
+      "bytes": 884,
+      "lines": 26,
+      "sha256": "9222e9780fcb1d9d6e72de8cbec837dc8634e4dac4ebeed64dbd1024e02fcb31"
+    },
+    {
+      "path": "skills/Dic/regular/address/area-code.txt",
+      "source": "skills/Dic",
+      "note": "",
+      "tags": [],
+      "bytes": 52953,
+      "lines": 4072,
+      "sha256": "a947c3d16d29d88b1e579e33c8d4ced21245fddbd04b1db3317a014df0fd5bf2"
+    },
+    {
+      "path": "skills/Dic/regular/address/cn-areas.txt",
+      "source": "skills/Dic",
+      "note": "",
+      "tags": [],
+      "bytes": 35206,
+      "lines": 2996,
+      "sha256": "00ab438f40dd8fe2fbdc0cf4546bcc95c065b19fea642388271ea4f87deda026"
+    },
+    {
+      "path": "skills/Dic/regular/address/cn-cities.txt",
+      "source": "skills/Dic",
+      "note": "",
+      "tags": [],
+      "bytes": 4136,
+      "lines": 342,
+      "sha256": "1d3b2fcdf247c69d70b6dddedaffbc176941a84cf49761ff7c5978627b5682f6"
+    },
+    {
+      "path": "skills/Dic/regular/address/cn-pcas.json",
+      "source": "skills/Dic",
+      "note": "",
+      "tags": [],
+      "bytes": 676611,
+      "lines": 1,
+      "sha256": "7dcdbb7f5b7ec6eba17443b0a7f4973a403869d1d9f1a93a9e1b40a92e5bfd61"
+    },
+    {
+      "path": "skills/Dic/regular/eicar.txt",
+      "source": "skills/Dic",
+      "note": "",
+      "tags": [],
+      "bytes": 68,
+      "lines": 1,
+      "sha256": "275a021bbfb6489e54d471899f7db9d1663fc695ec2fe2a2c4538aabf651fd0f"
+    },
+    {
+      "path": "skills/Dic/regular/keyword/_meta.yaml",
+      "source": "skills/Dic",
+      "note": "",
+      "tags": [],
+      "bytes": 385,
+      "lines": 11,
+      "sha256": "543a83c7b9cdada70331ab8a3a2ea55e8ed2345c111d82803b2ba43212b9249a"
+    },
+    {
+      "path": "skills/Dic/regular/keyword/keyword-common.txt",
+      "source": "skills/Dic",
+      "note": "",
+      "tags": [],
+      "bytes": 145,
+      "lines": 22,
+      "sha256": "33febd0dfd4f9ca840f9fbf866c55ab4c1d56db06e575a2fa7370237956312a9"
+    },
+    {
+      "path": "skills/Dic/regular/letter/_meta.yaml",
+      "source": "skills/Dic",
+      "note": "",
+      "tags": [],
+      "bytes": 1797,
+      "lines": 51,
+      "sha256": "3218feb9574f6a9895d7d41e8d2111e673694d10223bd4e240ac1102fc398ea7"
+    },
+    {
+      "path": "skills/Dic/regular/letter/lower-1char.txt",
+      "source": "skills/Dic",
+      "note": "",
+      "tags": [],
+      "bytes": 51,
+      "lines": 26,
+      "sha256": "2a8ec896744130a8f87c41dd4549d37971fad863a5c2df4a142183dbecfd956c"
+    },
+    {
+      "path": "skills/Dic/regular/letter/lower-2char.txt",
+      "source": "skills/Dic",
+      "note": "",
+      "tags": [],
+      "bytes": 2027,
+      "lines": 676,
+      "sha256": "4df4778d9840619fced072a4585b4aac5f39662099fb9d545ecefc99e27e7fe9"
+    },
+    {
+      "path": "skills/Dic/regular/letter/lower-3char.txt",
+      "source": "skills/Dic",
+      "note": "",
+      "tags": [],
+      "bytes": 70303,
+      "lines": 17576,
+      "sha256": "210e9c7dac7b387be679713b56063e3e5a9812ee3a94b339d56139c60f0beae9"
+    },
+    {
+      "path": "skills/Dic/regular/letter/lower-4char.txt",
+      "source": "skills/Dic",
+      "note": "",
+      "tags": [],
+      "bytes": 2284879,
+      "lines": 456976,
+      "sha256": "d9b6d699cadac43ae7d1d0de32fdc241a81f24299699d136d788dbba58d3e2b0"
+    },
+    {
+      "path": "skills/Dic/regular/letter/misc.txt",
+      "source": "skills/Dic",
+      "note": "",
+      "tags": [],
+      "bytes": 133,
+      "lines": 67,
+      "sha256": "538ca1b0f1b7f0d9034375e34b98d5f187c5154ea20de92b6d1166b66b8667b5"
+    },
+    {
+      "path": "skills/Dic/regular/letter/upper-1char.txt",
+      "source": "skills/Dic",
+      "note": "",
+      "tags": [],
+      "bytes": 51,
+      "lines": 26,
+      "sha256": "cfa4f846a6dbeb24477910a408ea21df3244beb5b1a2c7544b9397a0f2a50561"
+    },
+    {
+      "path": "skills/Dic/regular/letter/upper-2char.txt",
+      "source": "skills/Dic",
+      "note": "",
+      "tags": [],
+      "bytes": 2027,
+      "lines": 676,
+      "sha256": "9f295bef18525078ac1bcb6b2abac7fa4e1f57e0b43d2bf3ed99eaca8294addc"
+    },
+    {
+      "path": "skills/Dic/regular/letter/upper-3char.txt",
+      "source": "skills/Dic",
+      "note": "",
+      "tags": [],
+      "bytes": 70303,
+      "lines": 17576,
+      "sha256": "2043e15cad838df614975ccade942009dabbf77e6faf7adedec955577ce2e36a"
+    },
+    {
+      "path": "skills/Dic/regular/letter/upper-4char.txt",
+      "source": "skills/Dic",
+      "note": "",
+      "tags": [],
+      "bytes": 2284880,
+      "lines": 456977,
+      "sha256": "4546d3ca873f052fb0857a147815bd79ac4bb794fce2fc433630ccc70c4fd2ef"
+    },
+    {
+      "path": "skills/Dic/regular/number/_meta.yaml",
+      "source": "skills/Dic",
+      "note": "",
+      "tags": [],
+      "bytes": 2195,
+      "lines": 71,
+      "sha256": "4ca5e6793cba8f20c878a25bde1413c4da4abb37c6716e08ce1738cc1d14ba5f"
+    },
+    {
+      "path": "skills/Dic/regular/number/birthday.txt",
+      "source": "skills/Dic",
+      "note": "",
+      "tags": [],
+      "bytes": 962205,
+      "lines": 110912,
+      "sha256": "520fec97227bc45c8391fb158e087e09e0e742ef92b26c4751450f940c95991c"
+    },
+    {
+      "path": "skills/Dic/regular/number/num-0-10.txt",
+      "source": "skills/Dic",
+      "note": "",
+      "tags": [],
+      "bytes": 22,
+      "lines": 11,
+      "sha256": "85e31dd21bd6e8e6be6f0f6f41d3df582aaf689b58f3417d84f6c61b56d6b057"
+    },
+    {
+      "path": "skills/Dic/regular/number/num-0-100.txt",
+      "source": "skills/Dic",
+      "note": "",
+      "tags": [],
+      "bytes": 293,
+      "lines": 101,
+      "sha256": "3ccaf876a446492b8c40a555ec7db54a503e49b86b1801ce7a944d002606b736"
+    },
+    {
+      "path": "skills/Dic/regular/number/num-0-1000.txt",
+      "source": "skills/Dic",
+      "note": "",
+      "tags": [],
+      "bytes": 3895,
+      "lines": 1002,
+      "sha256": "cb46955dea94a0cae8d1ba7dfc0d2b8f80c40e1c94cd88e1562e19ef97e975d9"
+    },
+    {
+      "path": "skills/Dic/regular/number/num-0-10000.txt",
+      "source": "skills/Dic",
+      "note": "",
+      "tags": [],
+      "bytes": 48895,
+      "lines": 10001,
+      "sha256": "f14aa9ea0b9551eb0d2e1471780267c57dbf914524d5159063cff516b5c4aa2f"
+    },
+    {
+      "path": "skills/Dic/regular/number/num-0-100000.txt",
+      "source": "skills/Dic",
+      "note": "",
+      "tags": [],
+      "bytes": 588897,
+      "lines": 100002,
+      "sha256": "e548f72fd759615bf448ddd802ebb3673a88ec72e3792e26d81b9276d404e9ca"
+    },
+    {
+      "path": "skills/Dic/regular/number/num-0-5000.txt",
+      "source": "skills/Dic",
+      "note": "",
+      "tags": [],
+      "bytes": 23894,
+      "lines": 5001,
+      "sha256": "ded94b2f630a4c4d252a37f39554828116b7dd496bca41d0c564874b75e16e47"
+    },
+    {
+      "path": "skills/Dic/regular/number/num-00-99.txt",
+      "source": "skills/Dic",
+      "note": "",
+      "tags": [],
+      "bytes": 299,
+      "lines": 100,
+      "sha256": "983eba7a28c5c23657c39196bedbee16581bc61f1dc9377db21861356b03b39d"
+    },
+    {
+      "path": "skills/Dic/regular/number/num-000-999.txt",
+      "source": "skills/Dic",
+      "note": "",
+      "tags": [],
+      "bytes": 3999,
+      "lines": 1000,
+      "sha256": "1ffcb2374c22aa1df7b10e19057c27cbe9b67ae1e58f8f01921980b26c9eaab8"
+    },
+    {
+      "path": "skills/Dic/regular/number/num-0000-1000.txt",
+      "source": "skills/Dic",
+      "note": "",
+      "tags": [],
+      "bytes": 5004,
+      "lines": 1001,
+      "sha256": "70eb5156880785aa5242998447a038470a784bfc7ede24860f987a3f3353bee0"
+    },
+    {
+      "path": "skills/Dic/regular/number/num-000000-010000.txt",
+      "source": "skills/Dic",
+      "note": "",
+      "tags": [],
+      "bytes": 70007,
+      "lines": 10002,
+      "sha256": "40693f07c365961eada5b98300cb26190c9f8803cbec9e96ce988a0d0776287a"
+    },
+    {
+      "path": "skills/Dic/regular/number/num-000000-100000.txt",
+      "source": "skills/Dic",
+      "note": "",
+      "tags": [],
+      "bytes": 700007,
+      "lines": 100002,
+      "sha256": "0e9d14a7238b1e50d416472ac5b72ea3fc290c0db605faefcb26f7d5e874a877"
+    },
+    {
+      "path": "skills/Dic/regular/number/num-1000-9999.txt",
+      "source": "skills/Dic",
+      "note": "",
+      "tags": [],
+      "bytes": 44999,
+      "lines": 9000,
+      "sha256": "777655abe8f3713b94b6cca202fa33e4c2f2901bc46c6cffa3447045932c68db"
+    },
+    {
+      "path": "skills/Dic/regular/readme.md",
+      "source": "skills/Dic",
+      "note": "",
+      "tags": [],
+      "bytes": 1532,
+      "lines": 45,
+      "sha256": "fc9729ba74766ec9f6d646501f5eb32b0ee95a4ed3865cc42ac674b014ce1aec"
+    },
+    {
+      "path": "skills/Dic/regular/seo/_meta.yaml",
+      "source": "skills/Dic",
+      "note": "",
+      "tags": [],
+      "bytes": 357,
+      "lines": 11,
+      "sha256": "62cba03e4cdefe88bfbefb1698d9fd6a0853cfc140c260c8e5c5b9a3690f4a2e"
+    },
+    {
+      "path": "skills/Dic/regular/seo/seo-word.txt",
+      "source": "skills/Dic",
+      "note": "",
+      "tags": [],
+      "bytes": 396996,
+      "lines": 21201,
+      "sha256": "d4e439328bb21b68af6fa10cd7dc3ccd1923a972f287fa21a1841f8393db9f5a"
+    },
+    {
+      "path": "skills/Dic/web/api-param/_meta.yaml",
+      "source": "skills/Dic",
+      "note": "",
+      "tags": [],
+      "bytes": 3726,
+      "lines": 101,
+      "sha256": "ccc54c60c98766a8d6dad56323ca4647a680b3f684f285b5e3e1abeafcafa525"
+    },
+    {
+      "path": "skills/Dic/web/api-param/api.txt",
+      "source": "skills/Dic",
+      "note": "",
+      "tags": [],
+      "bytes": 141,
+      "lines": 28,
+      "sha256": "a1efb4a302717671f61454d06d622be0bf4394a778c5b037cf3543536beb481c"
+    },
+    {
+      "path": "skills/Dic/web/api-param/param-callback.txt",
+      "source": "skills/Dic",
+      "note": "",
+      "tags": [],
+      "bytes": 111,
+      "lines": 9,
+      "sha256": "15be59910a384e1e88a999dbdb229225e1803216f2e8b37c58759c144f8f2d2b"
+    },
+    {
+      "path": "skills/Dic/web/api-param/param-captcha.txt",
+      "source": "skills/Dic",
+      "note": "",
+      "tags": [],
+      "bytes": 275,
+      "lines": 50,
+      "sha256": "37c432032c5a8706db6066f96ec54c57c4950065616cd90cd47bfa48ea5c366d"
+    },
+    {
+      "path": "skills/Dic/web/api-param/param-common.txt",
+      "source": "skills/Dic",
+      "note": "",
+      "tags": [],
+      "bytes": 832,
+      "lines": 70,
+      "sha256": "386bd82373abdb251c1f5506ed78afae26ed58d8e6a91e8ad2a646c681af390d"
+    },
+    {
+      "path": "skills/Dic/web/api-param/param-extended.txt",
+      "source": "skills/Dic",
+      "note": "",
+      "tags": [],
+      "bytes": 526276,
+      "lines": 50360,
+      "sha256": "1ed7802d5a48fd3847d9c6039720983f4d7885c6ef44d73a8db0a203649d7397"
+    },
+    {
+      "path": "skills/Dic/web/api-param/param-findpassword.txt",
+      "source": "skills/Dic",
+      "note": "",
+      "tags": [],
+      "bytes": 632,
+      "lines": 57,
+      "sha256": "9808f4d30d50f640921212315f0ed57951ac2acea0bdddb53a9d4a27a0f62c74"
+    },
+    {
+      "path": "skills/Dic/web/api-param/param-imagesize.txt",
+      "source": "skills/Dic",
+      "note": "",
+      "tags": [],
+      "bytes": 352,
+      "lines": 18,
+      "sha256": "043cd507972f8cd1863210774fd300f6206ea5161ec4e7b22a4cc888d1774233"
+    },
+    {
+      "path": "skills/Dic/web/api-param/param-json.txt",
+      "source": "skills/Dic",
+      "note": "",
+      "tags": [],
+      "bytes": 73,
+      "lines": 12,
+      "sha256": "5afba9f70e95601cc249014606595c10d02de7f20c85093b4b21f51d461154b1"
+    },
+    {
+      "path": "skills/Dic/web/api-param/param-lfi.txt",
+      "source": "skills/Dic",
+      "note": "",
+      "tags": [],
+      "bytes": 196,
+      "lines": 25,
+      "sha256": "a4abf983fb2b8dd0a6278504c35895199de9883b44a889403d8fbe6a7da8d6d0"
+    },
+    {
+      "path": "skills/Dic/web/api-param/param-login.txt",
+      "source": "skills/Dic",
+      "note": "",
+      "tags": [],
+      "bytes": 119,
+      "lines": 14,
+      "sha256": "fad9c90366dcd39a6214d0dc7d96cb5828ddfdb0b29dc919fa781cf65d68e212"
+    },
+    {
+      "path": "skills/Dic/web/api-param/param-rce.txt",
+      "source": "skills/Dic",
+      "note": "",
+      "tags": [],
+      "bytes": 191,
+      "lines": 25,
+      "sha256": "de735c4ceadc4f5029e53ce3bbba255002142d3e5f2f133595a2988cf80ab276"
+    },
+    {
+      "path": "skills/Dic/web/api-param/param-redirect.txt",
+      "source": "skills/Dic",
+      "note": "",
+      "tags": [],
+      "bytes": 1797,
+      "lines": 89,
+      "sha256": "b5f0bc5247a49b7ae419aa2ace35b7ee138b1d5f31246596e3f5fec1ac381f31"
+    },
+    {
+      "path": "skills/Dic/web/api-param/param-register.txt",
+      "source": "skills/Dic",
+      "note": "",
+      "tags": [],
+      "bytes": 342,
+      "lines": 38,
+      "sha256": "8c9af8dde5ae3b8149674a5e69796b90f92f68b25fc383214fdb2da0f283f3b1"
+    },
+    {
+      "path": "skills/Dic/web/api-param/param-sqli.txt",
+      "source": "skills/Dic",
+      "note": "",
+      "tags": [],
+      "bytes": 181,
+      "lines": 25,
+      "sha256": "4f44cbc3345718c3466a42c8eebf9cbc42db1c377604337100c7564753fb2cd8"
+    },
+    {
+      "path": "skills/Dic/web/api-param/param-ssrf.txt",
+      "source": "skills/Dic",
+      "note": "",
+      "tags": [],
+      "bytes": 194,
+      "lines": 25,
+      "sha256": "4af58381cb1b1da759796599e4576eb53825b31fdc6052b0bb4f379550516b31"
+    },
+    {
+      "path": "skills/Dic/web/api-param/param-xss.txt",
+      "source": "skills/Dic",
+      "note": "",
+      "tags": [],
+      "bytes": 207,
+      "lines": 27,
+      "sha256": "42b7c5bd0873533c0a6bf5b12ce57f9017836e07a6cbeb8b693054a16d233953"
+    },
+    {
+      "path": "skills/Dic/web/api-param/top100-param-cookie.txt",
+      "source": "skills/Dic",
+      "note": "",
+      "tags": [],
+      "bytes": 960,
+      "lines": 100,
+      "sha256": "2ed06ebe4870a5445178405973cea1f0833155b45b56a796965253f4de1aebf0"
+    },
+    {
+      "path": "skills/Dic/web/api-param/top100-param-get.txt",
+      "source": "skills/Dic",
+      "note": "",
+      "tags": [],
+      "bytes": 519,
+      "lines": 99,
+      "sha256": "4637fe194bba8b216aeb879f475bd37cf41d8423ac460a5f716f019908a06186"
+    },
+    {
+      "path": "skills/Dic/web/api-param/top100-param-post.txt",
+      "source": "skills/Dic",
+      "note": "",
+      "tags": [],
+      "bytes": 563,
+      "lines": 85,
+      "sha256": "79fc22e406381b364efd6a68487c94bdad042b4881c494185f98f16b43f6f3a9"
+    },
+    {
+      "path": "skills/Dic/web/cms/_meta.yaml",
+      "source": "skills/Dic",
+      "note": "",
+      "tags": [],
+      "bytes": 545,
+      "lines": 16,
+      "sha256": "1968f1f3b704cd9cf280759f09641571fc839900d86c00ea935befb7e2184ab7"
+    },
+    {
+      "path": "skills/Dic/web/cms/thinkphp-controller.txt",
+      "source": "skills/Dic",
+      "note": "",
+      "tags": [],
+      "bytes": 884,
+      "lines": 1,
+      "sha256": "596fa500aa2d5a5ef930020ae4e8243d1ae0a14e4e0400e23e362a749ed9a00f"
+    },
+    {
+      "path": "skills/Dic/web/cms/wordpress.txt",
+      "source": "skills/Dic",
+      "note": "",
+      "tags": [],
+      "bytes": 5375,
+      "lines": 190,
+      "sha256": "0b8addc0fb941f3beeef48d9520a13ca02af3e2a0de63e18d64aa3cdd0eff454"
+    },
+    {
+      "path": "skills/Dic/web/ctf/_meta.yaml",
+      "source": "skills/Dic",
+      "note": "",
+      "tags": [],
+      "bytes": 690,
+      "lines": 21,
+      "sha256": "732d94131fb4c58cfc995b9aa1c982deb55da2b627e92e75e6934dcc8d7d4288"
+    },
+    {
+      "path": "skills/Dic/web/ctf/param.txt",
+      "source": "skills/Dic",
+      "note": "",
+      "tags": [],
+      "bytes": 1829,
+      "lines": 45,
+      "sha256": "954e5fc0665ba06929867db24d4b1ddc23253e17f7781d53a2300970324635fb"
+    },
+    {
+      "path": "skills/Dic/web/ctf/sql.txt",
+      "source": "skills/Dic",
+      "note": "",
+      "tags": [],
+      "bytes": 307,
+      "lines": 95,
+      "sha256": "10b0c18c3f347885aa4177005e18efeb8f3961dd46e8437bcde3d7c32b499a7f"
+    },
+    {
+      "path": "skills/Dic/web/ctf/uri.txt",
+      "source": "skills/Dic",
+      "note": "",
+      "tags": [],
+      "bytes": 2590,
+      "lines": 223,
+      "sha256": "d8a3c5b21c420aece43d5504d83390f632cf3c375612c629bf81bb0791f29659"
+    },
+    {
+      "path": "skills/Dic/web/directory/_meta.yaml",
+      "source": "skills/Dic",
+      "note": "",
+      "tags": [],
+      "bytes": 2237,
+      "lines": 51,
+      "sha256": "532d828415d0b80b89801fe833e2ce76674a80fee3e9485226807ee41b74b079"
+    },
+    {
+      "path": "skills/Dic/web/directory/admin-dir.txt",
+      "source": "skills/Dic",
+      "note": "",
+      "tags": [],
+      "bytes": 28195,
+      "lines": 2167,
+      "sha256": "a9a0f185cc68f103e8e5dff5b58ed993e3864e9c5f90051160960430a23dda91"
+    },
+    {
+      "path": "skills/Dic/web/directory/api.txt",
+      "source": "skills/Dic",
+      "note": "",
+      "tags": [],
+      "bytes": 6929,
+      "lines": 342,
+      "sha256": "b64876f7972f816b6d1041ba9685e626c1e681c017ea3e69bb1b5be602cb67c4"
+    },
+    {
+      "path": "skills/Dic/web/directory/asp/_meta.yaml",
+      "source": "skills/Dic",
+      "note": "",
+      "tags": [],
+      "bytes": 660,
+      "lines": 21,
+      "sha256": "e6bb1352336ba59121292ee3d0f8e3c4640addbed2b24c8f228565f3bba55cac"
+    },
+    {
+      "path": "skills/Dic/web/directory/asp/asp-directory.txt",
+      "source": "skills/Dic",
+      "note": "",
+      "tags": [],
+      "bytes": 1477359,
+      "lines": 60721,
+      "sha256": "2bdb29b8877b6184fac65cc903d3bda92f998c4785c01eceecb088afdde5f89b"
+    },
+    {
+      "path": "skills/Dic/web/directory/asp/asp.txt",
+      "source": "skills/Dic",
+      "note": "",
+      "tags": [],
+      "bytes": 1012603,
+      "lines": 70848,
+      "sha256": "fdf280b920425912a94fe706849640bdb7daf133750968302209d38776b55734"
+    },
+    {
+      "path": "skills/Dic/web/directory/asp/top100-asp.txt",
+      "source": "skills/Dic",
+      "note": "",
+      "tags": [],
+      "bytes": 1194,
+      "lines": 87,
+      "sha256": "477dfab2c706f8e1171f26681c66aa978e4f5ec2819f0f784e358c81d5cf0996"
+    },
+    {
+      "path": "skills/Dic/web/directory/aspx/_meta.yaml",
+      "source": "skills/Dic",
+      "note": "",
+      "tags": [],
+      "bytes": 969,
+      "lines": 31,
+      "sha256": "8e3d211af35ce4c37cc600d063dfae309960b37cb3f37d8a1514a658c4fe6b14"
+    },
+    {
+      "path": "skills/Dic/web/directory/aspx/ashx.txt",
+      "source": "skills/Dic",
+      "note": "",
+      "tags": [],
+      "bytes": 400069,
+      "lines": 26263,
+      "sha256": "f69dd49c1fa27e874d469bf9bf82773ad837cbc27d27142a7b1142cd706c4bf3"
+    },
+    {
+      "path": "skills/Dic/web/directory/aspx/aspx-directory.txt",
+      "source": "skills/Dic",
+      "note": "",
+      "tags": [],
+      "bytes": 1456202,
+      "lines": 46191,
+      "sha256": "d01c3d071f93bbeb4532575a0a0d71274c4b21c2aa6589020077f9ea0ccabd4f"
+    },
+    {
+      "path": "skills/Dic/web/directory/aspx/aspx.txt",
+      "source": "skills/Dic",
+      "note": "",
+      "tags": [],
+      "bytes": 401034,
+      "lines": 26334,
+      "sha256": "b77f08c3be928b7ab36d6e9ca21e68c5cf7c1f68ef949521aa4c789f38bfa8c6"
+    },
+    {
+      "path": "skills/Dic/web/directory/aspx/top100-ashx.txt",
+      "source": "skills/Dic",
+      "note": "",
+      "tags": [],
+      "bytes": 3046,
+      "lines": 162,
+      "sha256": "01048e4b9bfbdb749f6143f55c63c0f5a95a13c0cd94eb5d694577e7610a3003"
+    },
+    {
+      "path": "skills/Dic/web/directory/aspx/top100-aspx.txt",
+      "source": "skills/Dic",
+      "note": "",
+      "tags": [],
+      "bytes": 2095,
+      "lines": 96,
+      "sha256": "6caceef39f87e1fef3bc6073fe83347a19fbf2882e1eaa987fd9bab93572d917"
+    },
+    {
+      "path": "skills/Dic/web/directory/common.txt",
+      "source": "skills/Dic",
+      "note": "",
+      "tags": [],
+      "bytes": 80934,
+      "lines": 5379,
+      "sha256": "de34e64ba3aef4cd0956bea68b3df26f3e64daf88ca470032c08685b6ee78ef8"
+    },
+    {
+      "path": "skills/Dic/web/directory/js/_meta.yaml",
+      "source": "skills/Dic",
+      "note": "",
+      "tags": [],
+      "bytes": 325,
+      "lines": 11,
+      "sha256": "3722bf19595a4daffe0aa1f13edf314ad711a55fde48d8c62c5e44ab0fd4112a"
+    },
+    {
+      "path": "skills/Dic/web/directory/js/js.txt",
+      "source": "skills/Dic",
+      "note": "",
+      "tags": [],
+      "bytes": 3011,
+      "lines": 266,
+      "sha256": "2b4d781ab0aa39a9287f3b8ec40a97c23d4c6291503800ee87162fdd61d20399"
+    },
+    {
+      "path": "skills/Dic/web/directory/jsp/_meta.yaml",
+      "source": "skills/Dic",
+      "note": "",
+      "tags": [],
+      "bytes": 1279,
+      "lines": 41,
+      "sha256": "53e85ed9c1bc3f6b3e6f91e405c2d84fceb4cb0c66bc558f83fa8816665ab3d0"
+    },
+    {
+      "path": "skills/Dic/web/directory/jsp/action.txt",
+      "source": "skills/Dic",
+      "note": "",
+      "tags": [],
+      "bytes": 5663,
+      "lines": 269,
+      "sha256": "26b88b2f890ddba9c9a7fc338a765ad7b59247aeaea9e386a5d2bd12bf12c107"
+    },
+    {
+      "path": "skills/Dic/web/directory/jsp/do-directory.txt",
+      "source": "skills/Dic",
+      "note": "",
+      "tags": [],
+      "bytes": 88205,
+      "lines": 4005,
+      "sha256": "3cbdffb814713f4637c23cdf6f72543b213c323c463d8c56d64f1e672c9417e9"
+    },
+    {
+      "path": "skills/Dic/web/directory/jsp/do.txt",
+      "source": "skills/Dic",
+      "note": "",
+      "tags": [],
+      "bytes": 529127,
+      "lines": 41954,
+      "sha256": "7c328575ff408c548653121456e1776b5f5ca4620971b0059f6131fa067b0bc4"
+    },
+    {
+      "path": "skills/Dic/web/directory/jsp/jsp-directory.txt",
+      "source": "skills/Dic",
+      "note": "",
+      "tags": [],
+      "bytes": 99334,
+      "lines": 4218,
+      "sha256": "7ac3fe03e7c1c9aebfa851d807d8318bbbb6ef13aea55c440012d64c1353d250"
+    },
+    {
+      "path": "skills/Dic/web/directory/jsp/jsp.txt",
+      "source": "skills/Dic",
+      "note": "",
+      "tags": [],
+      "bytes": 572460,
+      "lines": 42015,
+      "sha256": "ddd9aa25a00d2309b98113452edacdcffce467e5c322bfd9174d3ab34aa81b14"
+    },
+    {
+      "path": "skills/Dic/web/directory/jsp/top100-do.txt",
+      "source": "skills/Dic",
+      "note": "",
+      "tags": [],
+      "bytes": 990,
+      "lines": 88,
+      "sha256": "2efe993ed9700d205377ead44eb30f083eeb7957d1f7cfa94568b923165ffbed"
+    },
+    {
+      "path": "skills/Dic/web/directory/jsp/top100-jsp.txt",
+      "source": "skills/Dic",
+      "note": "",
+      "tags": [],
+      "bytes": 1065,
+      "lines": 88,
+      "sha256": "be50c13da11a7a102c4f4949d0bd1986ffa59785c11dd54b517301e2cfded1cb"
+    },
+    {
+      "path": "skills/Dic/web/directory/login.txt",
+      "source": "skills/Dic",
+      "note": "",
+      "tags": [],
+      "bytes": 18171,
+      "lines": 1443,
+      "sha256": "ee52083923ad8ef8c3605c6ae5817e3d77e8cfb2e717e76e2ee512d8c8c9b20a"
+    },
+    {
+      "path": "skills/Dic/web/directory/main.txt",
+      "source": "skills/Dic",
+      "note": "",
+      "tags": [],
+      "bytes": 370581,
+      "lines": 35004,
+      "sha256": "1ea2220ca52aceafe9222e0ee486c7be4ed09bb630cff6d4f9e3fe436aba4c99"
+    },
+    {
+      "path": "skills/Dic/web/directory/payment-callback.txt",
+      "source": "skills/Dic",
+      "note": "",
+      "tags": [],
+      "bytes": 1251,
+      "lines": 74,
+      "sha256": "6934e4438ef750e1cb5d8f7430642574f1a2abc34efb750476e009b581e16632"
+    },
+    {
+      "path": "skills/Dic/web/directory/php/_meta.yaml",
+      "source": "skills/Dic",
+      "note": "",
+      "tags": [],
+      "bytes": 655,
+      "lines": 21,
+      "sha256": "29f21039ad3f9b4690841491a7f70c102e8bd6aac3e96f374b4cfcee6519fba1"
+    },
+    {
+      "path": "skills/Dic/web/directory/php/php-directory.txt",
+      "source": "skills/Dic",
+      "note": "",
+      "tags": [],
+      "bytes": 75981,
+      "lines": 3392,
+      "sha256": "40f60f8a36019fc0047b5f401ad5b9f22cd0fc5b6303ec0b73e24e1d8796e0fa"
+    },
+    {
+      "path": "skills/Dic/web/directory/php/php.txt",
+      "source": "skills/Dic",
+      "note": "",
+      "tags": [],
+      "bytes": 655998,
+      "lines": 48095,
+      "sha256": "9d152d3788c81f97aff7e9a89a8b6452bee7d25cde2705be2eb1fd6d4a3f77fb"
+    },
+    {
+      "path": "skills/Dic/web/directory/php/top100-php.txt",
+      "source": "skills/Dic",
+      "note": "",
+      "tags": [],
+      "bytes": 1315,
+      "lines": 94,
+      "sha256": "070a7efdff6e5909b3c6b0962b413d14a074293246ef207ca99761cbd5e7771c"
+    },
+    {
+      "path": "skills/Dic/web/directory/redteam-config.txt",
+      "source": "skills/Dic",
+      "note": "",
+      "tags": [],
+      "bytes": 1108,
+      "lines": 65,
+      "sha256": "99d404e3d127f1881557d5cd95fe9ccc5062005ad8b06fdf34495de98479c177"
+    },
+    {
+      "path": "skills/Dic/web/directory/redteam-file-suffix.txt",
+      "source": "skills/Dic",
+      "note": "",
+      "tags": [],
+      "bytes": 203,
+      "lines": 38,
+      "sha256": "3b949948bfc99140a27fa747af8b188bcbc12314476946ed64bbca6cae09d32d"
+    },
+    {
+      "path": "skills/Dic/web/directory/redteam-file.txt",
+      "source": "skills/Dic",
+      "note": "",
+      "tags": [],
+      "bytes": 1572,
+      "lines": 251,
+      "sha256": "7cac4a15ed85b520ad0f107ae4cd321d1f50427ff01eaa2ed1d5938fb077e78f"
+    },
+    {
+      "path": "skills/Dic/web/directory/secondary/_meta.yaml",
+      "source": "skills/Dic",
+      "note": "",
+      "tags": [],
+      "bytes": 497,
+      "lines": 16,
+      "sha256": "7682363feea094eacc123e085665466334779ee855e098e22c6c50ecd9b0036e"
+    },
+    {
+      "path": "skills/Dic/web/directory/secondary/secondary-common.txt",
+      "source": "skills/Dic",
+      "note": "",
+      "tags": [],
+      "bytes": 6913,
+      "lines": 719,
+      "sha256": "9c02a689a18648dbd7d578d1291467742b57040ff3c170a2334ec86bd620950c"
+    },
+    {
+      "path": "skills/Dic/web/directory/secondary/secondary-extended.txt",
+      "source": "skills/Dic",
+      "note": "",
+      "tags": [],
+      "bytes": 170351,
+      "lines": 24336,
+      "sha256": "ac73d078235e805a935b7ff93e560c3ae5b721d84b15dcd1322a2624a448aa4e"
+    },
+    {
+      "path": "skills/Dic/web/dns/_meta.yaml",
+      "source": "skills/Dic",
+      "note": "",
+      "tags": [],
+      "bytes": 684,
+      "lines": 21,
+      "sha256": "0ed9b901d757648e7f341f1a96f495ee7eeaf9add785fae8cbf1a93563043137"
+    },
+    {
+      "path": "skills/Dic/web/dns/dns.txt",
+      "source": "skills/Dic",
+      "note": "",
+      "tags": [],
+      "bytes": 1235839,
+      "lines": 151548,
+      "sha256": "8ef1bb4b4c46dd8981ff1ec47c133390741866bdcfb57c82638162094d0ecdc3"
+    },
+    {
+      "path": "skills/Dic/web/dns/oob.txt",
+      "source": "skills/Dic",
+      "note": "",
+      "tags": [],
+      "bytes": 266,
+      "lines": 24,
+      "sha256": "42d9563eb825d4590a8b65a476850c6ad10a38b726dec659f406860c4c9d6d93"
+    },
+    {
+      "path": "skills/Dic/web/dns/top-dns.txt",
+      "source": "skills/Dic",
+      "note": "",
+      "tags": [],
+      "bytes": 1162,
+      "lines": 177,
+      "sha256": "b5a9a74c20cdc6db14f16ef0eeda7c8e1693d7bd49e9a3cd267e66b1160971df"
+    },
+    {
+      "path": "skills/Dic/web/errors/_meta.yaml",
+      "source": "skills/Dic",
+      "note": "",
+      "tags": [],
+      "bytes": 400,
+      "lines": 11,
+      "sha256": "4d8c7942a51409c883ffd0fbbb469e7b75d277eaeb31ebb734609268ca3109ea"
+    },
+    {
+      "path": "skills/Dic/web/errors/top100-errors.txt",
+      "source": "skills/Dic",
+      "note": "",
+      "tags": [],
+      "bytes": 2276,
+      "lines": 98,
+      "sha256": "342d8e2bf4cb6e631d1534cbd79faddfd5bf30957d58a31aef9680f3de940007"
+    },
+    {
+      "path": "skills/Dic/web/file-backup/_meta.yaml",
+      "source": "skills/Dic",
+      "note": "",
+      "tags": [],
+      "bytes": 2210,
+      "lines": 66,
+      "sha256": "23827393c6be20aec8cfa7d7fae22e90f137b48f75967bda9ff00a7643872c4e"
+    },
+    {
+      "path": "skills/Dic/web/file-backup/bak-directory.txt",
+      "source": "skills/Dic",
+      "note": "",
+      "tags": [],
+      "bytes": 27795,
+      "lines": 1576,
+      "sha256": "bc5e64ffc69d6fe400fecde1b1bde207d89d14d8de53f016be690729bf339ecc"
+    },
+    {
+      "path": "skills/Dic/web/file-backup/bak.txt",
+      "source": "skills/Dic",
+      "note": "",
+      "tags": [],
+      "bytes": 10398,
+      "lines": 1444,
+      "sha256": "e6dc8e43ab0c6fa8d6b154fe24ecb86a0f2e1332a5463b826d2e783b9902d73f"
+    },
+    {
+      "path": "skills/Dic/web/file-backup/cfm-directory.txt",
+      "source": "skills/Dic",
+      "note": "",
+      "tags": [],
+      "bytes": 14912,
+      "lines": 248,
+      "sha256": "ac6af6fe83620e0a01deb8a6023f930ccf71aaa6c0dc1cce8b19475052724284"
+    },
+    {
+      "path": "skills/Dic/web/file-backup/cfm.txt",
+      "source": "skills/Dic",
+      "note": "",
+      "tags": [],
+      "bytes": 844,
+      "lines": 56,
+      "sha256": "5221040577a6cc433626d498e439d1e75a115f58df08a67585cfb0cbd8d231c0"
+    },
+    {
+      "path": "skills/Dic/web/file-backup/cgi-directory.txt",
+      "source": "skills/Dic",
+      "note": "",
+      "tags": [],
+      "bytes": 3403,
+      "lines": 98,
+      "sha256": "d2ed52674b2c0940c22446dd2f4cd547234f3e430fb256c6120f9df7ef68b68e"
+    },
+    {
+      "path": "skills/Dic/web/file-backup/cgi.txt",
+      "source": "skills/Dic",
+      "note": "",
+      "tags": [],
+      "bytes": 1001,
+      "lines": 80,
+      "sha256": "78e6d6a6345db348773a494f31a03666e698c4f6f8ab327c8d290254db382211"
+    },
+    {
+      "path": "skills/Dic/web/file-backup/db-directory.txt",
+      "source": "skills/Dic",
+      "note": "",
+      "tags": [],
+      "bytes": 18274,
+      "lines": 944,
+      "sha256": "a08af8b8b1208f633b96ff476627ff7d0b5b0b6ec252fc110937c3d37dff0e0d"
+    },
+    {
+      "path": "skills/Dic/web/file-backup/db.txt",
+      "source": "skills/Dic",
+      "note": "",
+      "tags": [],
+      "bytes": 10626,
+      "lines": 868,
+      "sha256": "b5580234f16de80d17c7824ce8e79e61b6dbb7179963fb70122aad5c7ee69572"
+    },
+    {
+      "path": "skills/Dic/web/file-backup/misc.txt",
+      "source": "skills/Dic",
+      "note": "",
+      "tags": [],
+      "bytes": 553389,
+      "lines": 51505,
+      "sha256": "c2d99626e42c7382b8d2483fba43b0b71a6a4f95fb214d13efc3121e918b2590"
+    },
+    {
+      "path": "skills/Dic/web/file-backup/py.txt",
+      "source": "skills/Dic",
+      "note": "",
+      "tags": [],
+      "bytes": 1678,
+      "lines": 131,
+      "sha256": "7ef83662f8c21329ccf427210135da595890ba25884fbd09a9ece13214f2f3cb"
+    },
+    {
+      "path": "skills/Dic/web/file-backup/suffix.txt",
+      "source": "skills/Dic",
+      "note": "",
+      "tags": [],
+      "bytes": 2456,
+      "lines": 403,
+      "sha256": "9c18ce00d4fb737d504260ad003bf0b4d8ca72f7a2d2f0dc81ff5f1f92a0ecf1"
+    },
+    {
+      "path": "skills/Dic/web/file-backup/txt.txt",
+      "source": "skills/Dic",
+      "note": "",
+      "tags": [],
+      "bytes": 14465,
+      "lines": 1321,
+      "sha256": "52984c6a6231e521bee2cc6dd8dc92cd0c6555ebd28ae5d202ed41759a100acc"
+    },
+    {
+      "path": "skills/Dic/web/http/_meta.yaml",
+      "source": "skills/Dic",
+      "note": "",
+      "tags": [],
+      "bytes": 2288,
+      "lines": 56,
+      "sha256": "dde845989624dcd89c1d35cbe16858ee262be768e7e67ccc47d1add96282d424"
+    },
+    {
+      "path": "skills/Dic/web/http/header-auth.txt",
+      "source": "skills/Dic",
+      "note": "",
+      "tags": [],
+      "bytes": 124,
+      "lines": 8,
+      "sha256": "4c503eb110543cdcbd3fa5fe1c2f7ba0f643e91d560fd65dbae12b68b067e799"
+    },
+    {
+      "path": "skills/Dic/web/http/header-mimetypes.txt",
+      "source": "skills/Dic",
+      "note": "",
+      "tags": [],
+      "bytes": 50658,
+      "lines": 1865,
+      "sha256": "68afcdb568a49e5b581593bfc93be8f86f05ec27123a811f72b21f0cd6481027"
+    },
+    {
+      "path": "skills/Dic/web/http/header-redteam.txt",
+      "source": "skills/Dic",
+      "note": "",
+      "tags": [],
+      "bytes": 1660,
+      "lines": 66,
+      "sha256": "eec94dbbfaebaad7c3826dc555547e6abe047894aac022bd8ad86381b576a169"
+    },
+    {
+      "path": "skills/Dic/web/http/header-refer-ip.txt",
+      "source": "skills/Dic",
+      "note": "",
+      "tags": [],
+      "bytes": 189,
+      "lines": 7,
+      "sha256": "c22dd1483c68e60372eac9ca18593f30e5cd94230eb54c36cb8ff8f38f0d9b0b"
+    },
+    {
+      "path": "skills/Dic/web/http/header-refer.txt",
+      "source": "skills/Dic",
+      "note": "",
+      "tags": [],
+      "bytes": 1454,
+      "lines": 114,
+      "sha256": "87eeb3f0ead9b2e6536b2e1e918a33d4903f1ea4a422e7364cab6ef1e12fae2f"
+    },
+    {
+      "path": "skills/Dic/web/http/header-sessionid.txt",
+      "source": "skills/Dic",
+      "note": "",
+      "tags": [],
+      "bytes": 113,
+      "lines": 11,
+      "sha256": "9d2a30c29afa1dcfe0305bcb75e2b65ec335bbb84f477ccfcc2428b34ba9bdec"
+    },
+    {
+      "path": "skills/Dic/web/http/header-spider.txt",
+      "source": "skills/Dic",
+      "note": "",
+      "tags": [],
+      "bytes": 2239,
+      "lines": 25,
+      "sha256": "4ad687445f4c4503bbc916c37d462c484897797ca8cbf12f76fce913d85efa21"
+    },
+    {
+      "path": "skills/Dic/web/http/methods.txt",
+      "source": "skills/Dic",
+      "note": "",
+      "tags": [],
+      "bytes": 248,
+      "lines": 33,
+      "sha256": "28588f84204bdaf4e2310994f19e39b2328e7cf336249748b54b9266b7950e93"
+    },
+    {
+      "path": "skills/Dic/web/http/proxifier-filter.txt",
+      "source": "skills/Dic",
+      "note": "",
+      "tags": [],
+      "bytes": 2669,
+      "lines": 176,
+      "sha256": "2a1ab781088d41c54b9e9b739d5a13f3e671b29be789bbafa52a5cc87309b516"
+    },
+    {
+      "path": "skills/Dic/web/http/top500-user-agent.txt",
+      "source": "skills/Dic",
+      "note": "",
+      "tags": [],
+      "bytes": 30088,
+      "lines": 448,
+      "sha256": "bd2db7f110972dfe7e0914f68da509d2b30b98f35a94b04265d6dbbbdd96ff98"
+    },
+    {
+      "path": "skills/Dic/web/middleware/_meta.yaml",
+      "source": "skills/Dic",
+      "note": "",
+      "tags": [],
+      "bytes": 395,
+      "lines": 11,
+      "sha256": "e58cd24b23e2a5bbac43e6d2408cfeddeb1519a4e8df3befaba815cb1c61c082"
+    },
+    {
+      "path": "skills/Dic/web/middleware/cas/_meta.yaml",
+      "source": "skills/Dic",
+      "note": "",
+      "tags": [],
+      "bytes": 443,
+      "lines": 16,
+      "sha256": "e3d23dcd9f287880f5174dc8a40191eee6b0048d42c5e70eab37f21fb554699b"
+    },
+    {
+      "path": "skills/Dic/web/middleware/cas/pass.txt",
+      "source": "skills/Dic",
+      "note": "",
+      "tags": [],
+      "bytes": 6,
+      "lines": 1,
+      "sha256": "c58557fcfe37300200790917ea2cb9b27a015de83d02297f80d84fbe9caa44f9"
+    },
+    {
+      "path": "skills/Dic/web/middleware/cas/user.txt",
+      "source": "skills/Dic",
+      "note": "",
+      "tags": [],
+      "bytes": 7,
+      "lines": 1,
+      "sha256": "e17ea65d390350faa2f63f23b1495493d7c724102c5ba57cd9a0d4a3c471922c"
+    },
+    {
+      "path": "skills/Dic/web/middleware/middleware-pass.txt",
+      "source": "skills/Dic",
+      "note": "",
+      "tags": [],
+      "bytes": 225,
+      "lines": 25,
+      "sha256": "180ca56ca364e31d9488f36ebe89dd481bc93f062cd9cadad3a76c2ff6e383db"
+    },
+    {
+      "path": "skills/Dic/web/middleware/rabbitmq/_meta.yaml",
+      "source": "skills/Dic",
+      "note": "",
+      "tags": [],
+      "bytes": 478,
+      "lines": 16,
+      "sha256": "6915dedfba61a7dbb39a8b9b1acda6451fce03539487dfe06542c399d162d98e"
+    },
+    {
+      "path": "skills/Dic/web/middleware/rabbitmq/pass.txt",
+      "source": "skills/Dic",
+      "note": "",
+      "tags": [],
+      "bytes": 291,
+      "lines": 37,
+      "sha256": "58616672e9627bebb598caa845da38c744ca60ea7ea7ae181740e028a10e4c02"
+    },
+    {
+      "path": "skills/Dic/web/middleware/rabbitmq/user.txt",
+      "source": "skills/Dic",
+      "note": "",
+      "tags": [],
+      "bytes": 36,
+      "lines": 6,
+      "sha256": "4134677900c49d437d7970004508458d7936b29c172ab57e5d01553dd8fb8b25"
+    },
+    {
+      "path": "skills/Dic/web/middleware/shiro/_meta.yaml",
+      "source": "skills/Dic",
+      "note": "",
+      "tags": [],
+      "bytes": 376,
+      "lines": 11,
+      "sha256": "9e2e7c474d35456336f9d2d1b0e6c7c6a2d8513dc792758d431d1c1370c27ac8"
+    },
+    {
+      "path": "skills/Dic/web/middleware/shiro/key.txt",
+      "source": "skills/Dic",
+      "note": "",
+      "tags": [],
+      "bytes": 2528679,
+      "lines": 101148,
+      "sha256": "8e698a47b7e53ccfeb93b0551c0673dcb1b2e0c6e360b8c38e6962d0abcbfa5f"
+    },
+    {
+      "path": "skills/Dic/web/middleware/spring/_meta.yaml",
+      "source": "skills/Dic",
+      "note": "",
+      "tags": [],
+      "bytes": 386,
+      "lines": 11,
+      "sha256": "983b439e932e077d877b3228b4d27adb378d3eb56a8898eb0c1520d246ef5a1e"
+    },
+    {
+      "path": "skills/Dic/web/middleware/spring/spring-configuration-metadata.txt",
+      "source": "skills/Dic",
+      "note": "",
+      "tags": [],
+      "bytes": 60101,
+      "lines": 1713,
+      "sha256": "95771ed51903280e16d2fe7d6544e526238a2dc0470c069484b3d6d295e915c9"
+    },
+    {
+      "path": "skills/Dic/web/middleware/tomcat/_meta.yaml",
+      "source": "skills/Dic",
+      "note": "",
+      "tags": [],
+      "bytes": 845,
+      "lines": 26,
+      "sha256": "3c2fffa1ef9b7d10689400fe88875f81ab582e41bf94b8bfb9748f2e9574f773"
+    },
+    {
+      "path": "skills/Dic/web/middleware/tomcat/basic.txt",
+      "source": "skills/Dic",
+      "note": "",
+      "tags": [],
+      "bytes": 3212,
+      "lines": 229,
+      "sha256": "aaa9abf1fb66ed925a89ccfa40a2d38fe23d095eac48d58357dbcec1792aca20"
+    },
+    {
+      "path": "skills/Dic/web/middleware/tomcat/pass.txt",
+      "source": "skills/Dic",
+      "note": "",
+      "tags": [],
+      "bytes": 300,
+      "lines": 38,
+      "sha256": "c0f277751dfa16a006c565d7fb7ada255cb2d6e3052b9fdc4e7bd3f4d3db685e"
+    },
+    {
+      "path": "skills/Dic/web/middleware/tomcat/tomcat.txt",
+      "source": "skills/Dic",
+      "note": "",
+      "tags": [],
+      "bytes": 2474,
+      "lines": 91,
+      "sha256": "b9b07219fca2fc34b337adcd8af8f5ff679dec70a678650c20e805d59d16ff8a"
+    },
+    {
+      "path": "skills/Dic/web/middleware/tomcat/user.txt",
+      "source": "skills/Dic",
+      "note": "",
+      "tags": [],
+      "bytes": 36,
+      "lines": 6,
+      "sha256": "afaf9d4faab827ed7c1f75853de2876270d6b1131c759a33609ecf9c405b0426"
+    },
+    {
+      "path": "skills/Dic/web/middleware/weblogic/_meta.yaml",
+      "source": "skills/Dic",
+      "note": "",
+      "tags": [],
+      "bytes": 693,
+      "lines": 21,
+      "sha256": "a8bb041b393bee5e21ea38dec998d85b8feba2a253c5d1e671c91be4dcfac86e"
+    },
+    {
+      "path": "skills/Dic/web/middleware/weblogic/pass.txt",
+      "source": "skills/Dic",
+      "note": "",
+      "tags": [],
+      "bytes": 387,
+      "lines": 44,
+      "sha256": "93f02db9f538bdf45b5dcc688491fbecf2ef0c39b439071580f6a6faea7632ea"
+    },
+    {
+      "path": "skills/Dic/web/middleware/weblogic/user.txt",
+      "source": "skills/Dic",
+      "note": "",
+      "tags": [],
+      "bytes": 81,
+      "lines": 11,
+      "sha256": "648f564d6b62d90f8ca0b6f24a633071a9c3dcdc22eba3a06370de48253d76d0"
+    },
+    {
+      "path": "skills/Dic/web/middleware/weblogic/weblogic.txt",
+      "source": "skills/Dic",
+      "note": "",
+      "tags": [],
+      "bytes": 7355,
+      "lines": 350,
+      "sha256": "7da81e56ab16095411334fb2458f5b82f0590c395eef36f551580326660de7f7"
+    },
+    {
+      "path": "skills/Dic/web/middleware/zabbix/_meta.yaml",
+      "source": "skills/Dic",
+      "note": "",
+      "tags": [],
+      "bytes": 437,
+      "lines": 16,
+      "sha256": "06d52a569651a8d60a27ccb87b9686ff6c5188c2f12da9f1093aa9fd7e1645f7"
+    },
+    {
+      "path": "skills/Dic/web/middleware/zabbix/pass.txt",
+      "source": "skills/Dic",
+      "note": "",
+      "tags": [],
+      "bytes": 6,
+      "lines": 1,
+      "sha256": "caf1c06dcf802728c4cfc24d645e1e7386ba0289e03ea93be21e2ad625b5a3d0"
+    },
+    {
+      "path": "skills/Dic/web/middleware/zabbix/user.txt",
+      "source": "skills/Dic",
+      "note": "",
+      "tags": [],
+      "bytes": 18,
+      "lines": 3,
+      "sha256": "e5d060c8bf37ae6a2eacb4c83d17cefa1bf6e82e2f41194e766b0a271d304cd5"
+    },
+    {
+      "path": "skills/Dic/web/service/druid/_meta.yaml",
+      "source": "skills/Dic",
+      "note": "",
+      "tags": [],
+      "bytes": 469,
+      "lines": 16,
+      "sha256": "c7476ffe2763733657a1ab1ff7d4f0bcfb3477f528db91eaecb0f8d0747cc584"
+    },
+    {
+      "path": "skills/Dic/web/service/druid/pass.txt",
+      "source": "skills/Dic",
+      "note": "",
+      "tags": [],
+      "bytes": 27,
+      "lines": 4,
+      "sha256": "a9100bb0c13db041dff6a3fcbce85e016256de60d4c76769eb2c60f34031e8da"
+    },
+    {
+      "path": "skills/Dic/web/service/druid/user.txt",
+      "source": "skills/Dic",
+      "note": "",
+      "tags": [],
+      "bytes": 20,
+      "lines": 4,
+      "sha256": "16e1a7fe696d78f00c9e1db79be8a81d98d41647987e8b91ac137953d586024b"
+    },
+    {
+      "path": "skills/Dic/web/service/jira/_meta.yaml",
+      "source": "skills/Dic",
+      "note": "",
+      "tags": [],
+      "bytes": 348,
+      "lines": 11,
+      "sha256": "94f062f6460ed2942fa3b7c2a440756bebca09c15eb3a33251d8d01b050cc092"
+    },
+    {
+      "path": "skills/Dic/web/service/jira/jira.txt",
+      "source": "skills/Dic",
+      "note": "",
+      "tags": [],
+      "bytes": 1344,
+      "lines": 22,
+      "sha256": "19b56e465b1c97ef47d169d75563c01c017e835b183e181b60d52e5e26bd312f"
+    },
+    {
+      "path": "skills/Dic/web/service/phpmyadmin/_meta.yaml",
+      "source": "skills/Dic",
+      "note": "",
+      "tags": [],
+      "bytes": 488,
+      "lines": 16,
+      "sha256": "1243526de2326e5d08eff18811528d314e7071ed5f39fdda70d0bb0aca4b231a"
+    },
+    {
+      "path": "skills/Dic/web/service/phpmyadmin/pass.txt",
+      "source": "skills/Dic",
+      "note": "",
+      "tags": [],
+      "bytes": 2543,
+      "lines": 267,
+      "sha256": "1bf18c46442148cc36509dcec6f9525a50dd57f951ba3ff0951cbb4e8e2e224c"
+    },
+    {
+      "path": "skills/Dic/web/service/phpmyadmin/user.txt",
+      "source": "skills/Dic",
+      "note": "",
+      "tags": [],
+      "bytes": 10,
+      "lines": 2,
+      "sha256": "5885ded8e5c298f7819b82533190868e978277b408f33b16cb222bfb25176148"
+    },
+    {
+      "path": "skills/Dic/web/service/xxljob/_meta.yaml",
+      "source": "skills/Dic",
+      "note": "",
+      "tags": [],
+      "bytes": 342,
+      "lines": 11,
+      "sha256": "6524bc11f9c21311e28e165616a9de64962e8da604d403aa785b1b7943c5103f"
+    },
+    {
+      "path": "skills/Dic/web/service/xxljob/xxl-path.txt",
+      "source": "skills/Dic",
+      "note": "",
+      "tags": [],
+      "bytes": 111,
+      "lines": 11,
+      "sha256": "631bfd78094196d270a484695e5d42e36154f0cd7c9bd12c57d25922753577b7"
+    },
+    {
+      "path": "skills/Dic/web/upload/_meta.yaml",
+      "source": "skills/Dic",
+      "note": "",
+      "tags": [],
+      "bytes": 1200,
+      "lines": 36,
+      "sha256": "d7747c7c12cd1ec4a1757806293b11420c15d2d7ff331b5bfeaad82e3bafafe2"
+    },
+    {
+      "path": "skills/Dic/web/upload/asp.txt",
+      "source": "skills/Dic",
+      "note": "",
+      "tags": [],
+      "bytes": 276,
+      "lines": 30,
+      "sha256": "7f8ac60cc8eb2747fe8859c530d6385eb76389d513d5636f4d8ddb187f766307"
+    },
+    {
+      "path": "skills/Dic/web/upload/content-type.txt",
+      "source": "skills/Dic",
+      "note": "",
+      "tags": [],
+      "bytes": 4858,
+      "lines": 253,
+      "sha256": "ba793dfb6ade3a2aa10ada19b323706c9000a22daa24b57eba6327b27b9c14c9"
+    },
+    {
+      "path": "skills/Dic/web/upload/htaccess.txt",
+      "source": "skills/Dic",
+      "note": "",
+      "tags": [],
+      "bytes": 369,
+      "lines": 37,
+      "sha256": "07e3a11149dab72b48f7a419631ed324e03eb8c5f0e7539267ed48337c7e2c39"
+    },
+    {
+      "path": "skills/Dic/web/upload/jsp.txt",
+      "source": "skills/Dic",
+      "note": "",
+      "tags": [],
+      "bytes": 276,
+      "lines": 30,
+      "sha256": "b025f5ee4415d1f82f719f142885c9cea470f18a69d003531b07c72393e2f692"
+    },
+    {
+      "path": "skills/Dic/web/upload/php.txt",
+      "source": "skills/Dic",
+      "note": "",
+      "tags": [],
+      "bytes": 276,
+      "lines": 30,
+      "sha256": "9f46bba1da169ae79e9f18d3eb15552379d7d8b5227113febbd81f7c4a07a440"
+    },
+    {
+      "path": "skills/Dic/web/upload/upload-suffix.txt",
+      "source": "skills/Dic",
+      "note": "",
+      "tags": [],
+      "bytes": 158,
+      "lines": 34,
+      "sha256": "721e22476fcb91c2d389cc685cb6404882883a898387608a14e354dd643801af"
+    },
+    {
+      "path": "skills/Dic/web/webshell/_meta.yaml",
+      "source": "skills/Dic",
+      "note": "",
+      "tags": [],
+      "bytes": 534,
+      "lines": 16,
+      "sha256": "b6a8a93f591a7e3753ca85f8bd5d078dede7b925337a01d8493a6b1c027cdb99"
+    },
+    {
+      "path": "skills/Dic/web/webshell/dir.txt",
+      "source": "skills/Dic",
+      "note": "",
+      "tags": [],
+      "bytes": 763240,
+      "lines": 52412,
+      "sha256": "04531cfb66867fa4610ac1ac8fe8e84d7d16fd2b4c9055aa252780cc0c3aebdb"
+    },
+    {
+      "path": "skills/Dic/web/webshell/webshell-pass.txt",
+      "source": "skills/Dic",
+      "note": "",
+      "tags": [],
+      "bytes": 3492371,
+      "lines": 437952,
+      "sha256": "ca9d382439cb8cbbd058d6a2df6b48d797843af310a2dfadd795d9301cad0818"
+    }
+  ],
+  "wordlists": [
+    {
+      "path": "wordlists/common.txt",
+      "bytes": 38536,
+      "lines": 4752,
+      "sha256": "47fb86ca6fb3f97e5491161581900d6d99851fb16764eacddf16aa85617c956a",
+      "note": "Small directory wordlist: use first."
+    },
+    {
+      "path": "wordlists/directory-list-2.3-small.txt",
+      "bytes": 813102,
+      "lines": 87665,
+      "sha256": "73a5b6b52691dfc19f7241214cb5bc5c2e860a0feca4bcf77ecf7ac9772dd89d",
+      "note": "Medium directory wordlist: use after common."
+    },
+    {
+      "path": "wordlists/dnsmap.txt",
+      "bytes": 70383,
+      "lines": 17579,
+      "sha256": "7f9c2a3899799c71b44a12b4f02d7b1d817f5842e556e89a793eb8f66fc1a1ac",
+      "note": "Subdomain wordlist: the only bundled DNS list."
+    }
+  ],
+  "scripts": [],
+  "tools": []
+}
